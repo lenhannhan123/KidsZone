@@ -1,0 +1,116 @@
+
+
+#nvtb{
+    position: relative;
+}
+#LoginRegister{
+     position: absolute;
+     right: 20px;
+     top: 1px;
+}
+#btn01{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    
+    font-weight: bold;
+    color: white;
+}
+.btnreg{
+    background-image: url(../gif/reg01.png);
+    background-position-x: 10px;
+    padding-left: 40px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    opacity: 70%;
+}
+.btnreg:hover {
+    background-image: url(../gif/reg01g.gif);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    text-shadow: 0px 0px 10px #f379c4;
+    opacity: 100%;
+}
+
+.btnlog{
+    background-image: url(../gif/log01.png);
+    background-position-x: 10px;
+    padding-left: 40px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    opacity: 70%;
+}
+.btnlog:hover {
+    background-image: url(../gif/lop01g.gif);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    text-shadow: 0px 0px 10px #f379c4;
+    opacity: 100%;
+}
+
+#btnlg{
+    border: none;
+    background-color: rgb(105,237,245);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 150px;
+    height: 40px;
+}
+
+#menu{
+    
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+#lih{
+    list-style-type: none;
+    display: inline;
+}
+#home,#learning,#contact{
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 20pt;
+    font-family: Modak;
+}
+#logo{
+    position: absolute;
+    margin-left: 50px;
+}
+#table01{
+    position: absolute;
+    margin-top: 180px;
+     background-image: url(../image/board.png);
+     width: 400px;
+     height: 250px;
+     background-size: 400px;
+     background-repeat: no-repeat;
+     margin-left: 35%;
+     text-align: center;
+     animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+     
+ }
+ 
+ #brd01{
+     margin-top: 35%;
+     color:white;
+     text-shadow: 0px 0px 20px rgb(105,237,245);
+     font-family: Modak ;
+     font-size: 45pt;
+    
+ }
+ @keyframes example {
+    20% {transform: rotate(0deg); transform-origin: top center}
+    40% {transform: rotate(20deg); transform-origin: top center}
+    60% {transform: rotate(0deg); transform-origin: top center}
+    80% {transform: rotate(-20deg); transform-origin: top center}
+    100% {transform: rotate(0deg); transform-origin: top center}
+}
+#sun{
+    position: absolute;
+    margin-left: 62%;
+ }
+ #snow{
+    position: absolute;
+ }

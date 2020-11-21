@@ -1,0 +1,26 @@
+#fthr{
+    height:3px; 
+    background: rgb(0,86,255);
+    background: linear-gradient(167deg, rgba(0,86,255,1) 0%, rgba(1,241,255,1) 40%, rgba(239,251,255,1) 71%, rgba(240,101,125,1) 87%, rgba(246,17,95,1) 100%);
+ }
+ #tbftth{
+     width: 300px;
+     height: 30px;
+
+ }
+ #tbft{
+     margin-left: 50px;
+ }
+ #aft{
+     color: black;
+     text-decoration: none;
+ }
+
+ .asde{
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    position: fixed;
+    bottom: 60px;
+    margin-left: 93%;
+  }
