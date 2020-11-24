@@ -7,17 +7,19 @@ var chu=['Alphabet Game',
          'Vegetables Game',
          'The days of the week Game',
          'The week of the year Game',
-         'Quiz Game'
+         'Quiz Game',
+         'Orther Game'
          
         ];
 
 
 var hinh=['../image/abc00.png',
-          '../image/math00.png'
+          '../image/math00.png',
+          '../image/music00.png'
         ]
 
 
-var n=8;
+var n=9;
 
 
 
