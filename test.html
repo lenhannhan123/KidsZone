@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Slow-motion Zoom Container */
+        .img-hover-zoom--slowmo img {
+         transform-origin: 50% 65%;
+         transition: transform 5s, filter 3s ease-in-out;
+         filter: brightness(150%);
+        }
+
+        /* The Transformation */
+            .img-hover-zoom--slowmo:hover img {
+            filter: brightness(100%);
+            transform: scale(3);
+            }
+    </style>
+
+
 </head>
 <body>
-    nhânnanah
+    <div style="width: 300px; height: 500px; border: solid; " >
+        </div>
+    
+
+
+    
 </body>
 </html>
