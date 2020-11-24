@@ -13,9 +13,16 @@ var chu=['Alphabet Game',
         ];
 
 
-var hinh=['../image/abc00.png',
-          '../image/math00.png',
-          '../image/music00.png'
+var hinh=['image/abc00.png',
+          'image/math00.png',
+          'image/music00.png',
+          'image/color00.png',
+          'image/animal00.png',
+          'image/Vegetables00.png',
+          'image/tdotw00.png',
+          'image/calender00.png',
+          'image/quiz00.png',
+          'image/orther00.png',
         ]
 
 
@@ -29,12 +36,16 @@ for (var i=0; i <=n ;i++){
     }
 
 
-    if((i % 4 ==0) && (i<n) ){
+    if((i % 5 ==0) && (i<n) ){
         document.write('</div>');
         document.write('<div class="row" >');
     }
     document.write('<a id="cott" href="#">');
-    document.write('<div class="col-sm-2 col-sm-offset-1" id="tbg" >');
+    if ((i==0) || (i %5 ==0) ){
+        document.write('<div class="col-sm-2 col-sm-offset-1" id="tbg" >');
+    } else { document.write('<div class="col-sm-2" id="tbg" >'); }
+
+    
     document.write(' <div class="image-box" style="margin-bottom: 12%; margin-top: 3%;  border-radius: 20px; "  >');
     document.write(' <img src="'+hinh[i]+'" width="150px" height="150px" />');
     document.write('</div>');
