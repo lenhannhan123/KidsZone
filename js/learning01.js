@@ -49,7 +49,7 @@ for (var i=0; i <=n ;i++){
     document.write(' <div class="image-box" style="margin-bottom: 12%; margin-top: 3%;  border-radius: 20px; "  >');
     document.write(' <img src="'+hinh[i]+'" width="150px" height="150px" />');
     document.write('</div>');
-    document.write('<span id="chu" >'+chu[i]+'</span> ');
+    document.write('<div id="chu" >'+chu[i]+'</div> ');
     document.write('</div>');
     document.write('</a>');
     if((i==n) ){

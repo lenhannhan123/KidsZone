@@ -44,10 +44,10 @@
        margin-left: 5%;
    }
    #chu{
-       font-size: 12pt; 
+       font-size: 12pt;
        font-weight: bolder; 
-       margin-left: auto;
        text-align: center;
+       margin-left: auto;
        color: rgb(5, 177, 180);
    }
     #chu:hover{
