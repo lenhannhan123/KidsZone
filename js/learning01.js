@@ -12,6 +12,7 @@ for (var i=0; i <=n ;i++){
         document.write('<div class="row" >');
     }
     document.write('<a id="cott" href="#">');
+    
     if ((i==0) || (i %5 ==0) ){
         document.write('<div class="col-sm-2 col-sm-offset-1" id="tbg" >');
     } else { document.write('<div class="col-sm-2" id="tbg" >'); }
