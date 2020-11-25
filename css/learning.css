@@ -43,13 +43,13 @@
        margin-top: 5%;
        margin-left: 5%;
    }
-   #chu{
+   #activity{
        font-size: 12pt;
        font-weight: bolder; 
        text-align: center;
        margin-left: auto;
        color: rgb(5, 177, 180);
    }
-    #chu:hover{
+    #activity:hover{
        color: deepskyblue
    }
