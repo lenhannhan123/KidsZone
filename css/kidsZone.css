@@ -1,0 +1,4 @@
+@font-face{
+    src:url(fonts/Modak-Regular.ttf); /* Add font from url */
+    font-family: Modak; /*Rename font*/
+}

@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning</title>
-
-    <!--Angular-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
 
     <!--Bootraps CDN-->
     <!-- Latest compiled and minified CSS -->
@@ -21,26 +18,10 @@
     <!--add css-->
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/HeaderAside.css">
-    <link rel="stylesheet" href="css/learning.css">
+    <link rel="stylesheet" href="css/kidsZone.css">
     <!--add javacript-->
-    <Script>
-        function play(ms,aut){
-            var audio = new Audio(ms);
-            audio.play();
-            if (aut==1){
-                audio.autoplay()
-            }
-            
-        }
-    </Script>
-    
-    <style>
-        /*Add font navbar*/ 
-        @font-face{
-            src:url(fonts/Modak-Regular.ttf); /* Add font from url */
-            font-family: Modak; /*Rename font*/
-        }  
-    </style>
+    <script src="js/kidsZone.js"></script>
+
 </head>
 <body>
 
@@ -80,13 +61,13 @@
             <div  id="menu" >
                 <Ul>
                     <li id="lih" >
-                        <a id="home" href="homepage.html" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <a id="home" href="#" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
                             <img src="gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
                             <span>Home</span> 
                         </a>
                     </li>
                     <li id="lih">
-                        <a id="learning" href="#" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <a id="learning" href="learning.html" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
                             <img src="gif/learngif.gif"  style="width: 70px; margin-bottom: 20px;">
                            <Span>Learning</Span> 
                         </a>
@@ -102,7 +83,7 @@
             </div>
 
             <div id="table01"  >
-                <p id="brd01" >Learning</p>
+                <p id="brd01" >Home</p>
             </div>
 
             <div>
@@ -111,19 +92,49 @@
         </nav>
 
         
-
+        <!-- All body contents are inside below section -->
         <section>
-                <p id="title1"  align="center" >Learning</p>
-                <p id="content"  align="center"  >Welcome to learning centre of Kids Zone. Check out below for great interactive 
-                activities for you!</p>
-                <script src="js/learning01.js" ></script>
+        <!--First three columns of home page-->
+        <div class="container - fluid">
+            <br>
+            <h1 style="color: #5b79ca" align="center">Welcome to Kids-Zone</h1><br>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:lightpink;" align="center">
+                    <h4>
+                        Explore!
+                    </h4>
+                    <img src="image/Explore.jpg" style='height: 100%; width: 100%; object-fit: contain'>
+                    <a href='https://www.freepik.com/vectors/kids'>
+                        Kids vector created by brgfx - www.freepik.com
+                    </a>
+                </div>
+                <div class="col-sm-4" style="background-color:lightblue;" align="center">
+                    <h4>
+                        Learning Activities
+                    </h4>
+                    <img src="image/Learning.jpg" style='height: 100%; width: 100%; object-fit: contain'>
+                    <a href='https://www.freepik.com/vectors/school'>
+                        School vector created by pikisuperstar - www.freepik.com
+                    </a>
+                </div>
+                <div class="col-sm-4" style="background-color:lightgreen;" align="center">
+                    <h4>
+                        Gallery
+                    </h4>
+                    <img src="image/Gallery.jpg"  style='height: 100%; width: 100%; object-fit: contain'>
+                    <a href='https://www.freepik.com/vectors/frame'>
+                        Frame vector created by pch.vector - www.freepik.com
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--End of first three columns of homepage-->
         </section>
 
 
 
 
-         <footer style="margin-top: 20px;"  >
-             
+         <footer>
             <hr id="fthr">
             <div>
                 <a href="#">
@@ -206,7 +217,6 @@
          </footer>
 
          <aside class="asde" >
-          
             <a href="#" ><img src="image/arow.png" alt="icon" width="65px" ></a> 
            </aside>
     </div>

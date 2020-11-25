@@ -1,0 +1,55 @@
+#title1{
+    color:rgb(105,237,245); 
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold; 
+    font-size: 40pt;
+}
+#content{
+   color: grey;
+   width: 1200px;
+   font-family: Arial, Helvetica, sans-serif ;
+   font-size: 18pt; 
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+       .image-box {
+           position: relative;
+           margin: auto;
+           overflow: hidden;
+           width: 150px;
+          
+       }
+       .image-box img {
+           max-width: 100%;
+           transition: all 0.6s;
+           display: block;
+           width: 100%;
+           height: auto;
+           transform: scale(1);
+           
+       }
+
+       .image-box:hover img {
+           transform: scale(1.4);
+           
+       }
+   #tbg{
+       height: 220px; 
+       width: 180px;   
+       box-shadow: 1px 1px 5px gray ;
+       border-radius: 20px;
+       margin-top: 5%;
+       margin-left: 5%;
+   }
+   #activity{
+       font-size: 12pt;
+       font-weight: bolder; 
+       text-align: center;
+       margin-left: auto;
+       color: rgb(5, 177, 180);
+   }
+    #activity:hover{
+       color: deepskyblue
+   }
