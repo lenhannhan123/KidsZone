@@ -19,26 +19,24 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/HeaderAside.css">
     <link rel="stylesheet" href="css/kidsZone.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <!--add javacript-->
     <script src="js/kidsZone.js"></script>
+
+    <style>
+        /*Add font navbar*/ 
+        @font-face{
+            font-family: Modak; /*Rename font*/
+            src:url(fonts/Modak-Regular.ttf); /* Add font from url */
+        }
+    </style>
 
 </head>
 <body>
 
     
     <div class="container-fluid" > 
-    
         <nav class="nvtb">
-
-
-            <div id="snow" >
-                <img src="gif/snow.gif" height="300px" >
-                <img src="gif/snow.gif" height="300px" >
-                <img src="gif/snow.gif" height="300px" >
-                <img src="gif/snow.gif" height="300px" >
-                
-            </div>
-
             <div id="LoginRegister">
                
                     <a href="#" id="btn01" >
@@ -58,12 +56,12 @@
                 <img src="gif/sun.gif" style="width: 120px;" >
             </div>
 
-            <div  id="menu" >
+            <div  id="menu">
                 <Ul>
                     <li id="lih" >
                         <a id="home" href="#" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
                             <img src="gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
-                            <span>Home</span> 
+                            <span class="Modak">Home</span> 
                         </a>
                     </li>
                     <li id="lih">
@@ -95,40 +93,35 @@
         <!-- All body contents are inside below section -->
         <section>
         <!--First three columns of home page-->
-        <div class="container - fluid">
+        <!-- <div class="container - fluid">
             <br>
             <h1 style="color: #5b79ca" align="center">Welcome to Kids-Zone</h1><br>
             <div class="row">
-                <div class="col-sm-4" style="background-color:lightpink;" align="center">
+                <div class="col-sm-4" id="tbg">
+                    <div class="image-box" style="background-color:lightpink;" align="center">
+                        <img src="image/Explore.jpg" style='height: 100%; width: 100%; object-fit: contain'>
+                    </div>
                     <h4>
                         Explore!
                     </h4>
-                    <img src="image/Explore.jpg" style='height: 100%; width: 100%; object-fit: contain'>
-                    <a href='https://www.freepik.com/vectors/kids'>
-                        Kids vector created by brgfx - www.freepik.com
-                    </a>
                 </div>
                 <div class="col-sm-4" style="background-color:lightblue;" align="center">
                     <h4>
-                        Learning Activities
+                        Learning
                     </h4>
                     <img src="image/Learning.jpg" style='height: 100%; width: 100%; object-fit: contain'>
-                    <a href='https://www.freepik.com/vectors/school'>
-                        School vector created by pikisuperstar - www.freepik.com
-                    </a>
                 </div>
                 <div class="col-sm-4" style="background-color:lightgreen;" align="center">
                     <h4>
                         Gallery
                     </h4>
                     <img src="image/Gallery.jpg"  style='height: 100%; width: 100%; object-fit: contain'>
-                    <a href='https://www.freepik.com/vectors/frame'>
-                        Frame vector created by pch.vector - www.freepik.com
-                    </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--End of first three columns of homepage-->
+
+       
         </section>
 
 

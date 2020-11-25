@@ -1,4 +1,13 @@
 @font-face{
-    src:url(fonts/Modak-Regular.ttf); /* Add font from url */
     font-family: Modak; /*Rename font*/
+    src:url(fonts/Modak-Regular.ttf); /* Add font from url */
+}
+
+nav {
+    src:url(fonts/Modak-Regular.ttf);
+    font-family: 'Modak';
+}
+
+* {
+    font-family:'Open Sans';
 }
