@@ -23,4 +23,12 @@
     position: fixed;
     bottom: 60px;
     margin-left: 93%;
-  }
+}
+
+/* Smooth scrolling to the top */
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+}
