@@ -24,6 +24,15 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <!--add javacript-->
     <script src="../js/kidsZone.js"></script>
+    <Script>
+        function play(ms,aut){
+            var audio = new Audio(ms);
+            audio.play();
+            if (aut==1){
+                audio.autoplay()
+            }
+        }
+    </Script>
    
 
 
@@ -36,7 +45,7 @@
     </style>
 
 </head>
-<body id="top">
+<body>
     <div class="container-fluid" > 
         <nav class="nvtb">
             <div id="LoginRegister">
@@ -121,22 +130,103 @@
             </div>
         </div> -->
         <!--End of first three columns of homepage-->
-        <div class="row" >
-            <h1 style="color: #5b79ca" align="center">Welcome to Kids Zone</h1><br>
-            <a href="#">
-                <div class="col-sm-2 col-sm-offset-1" id="tbg" >
-                    <div class="image-box" style="margin-bottom: 12%; margin-top: 3%;  border-radius: 20px; "  >
-                        <img src="../image/abc00.png" width="150px" height="150px" />
+        <div>
+            <br>
+            <h1 style="color: #3bac53" align="center">Welcome to Kids Zone</h1><br>
+        </div>
+
+        <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <a href="#">
+                            <div class="image-box">
+                                <img src="../image/Explore.jpg"/>
+                            </div>
+                        </a>
+                        <a href="#" style="text-decoration: none">
+                            <h3>Explore</h3>
+                        </a>
+                        <br><p>Check our our tutorial on this site, along with common FAQ.</p>
+                        <a href="#" class="btn-common" style="text-decoration:none">
+                            View details
+                        </a>
                     </div>
-                    <div id="activity" >Alphabet Game</div> 
+                </div>
+            
+            <a href="#">
+                <div class="column">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="../image/Learning.jpg"/>
+                        </div>
+                        <a href="#" style="text-decoration: none">
+                            <h3>Learning</h3>
+                        </a>
+                        <br><p>View all available learning modules and activities right here!</p>
+                        <a href="#" class="btn-common" style="text-decoration:none">
+                            View details
+                        </a>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="column">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="../image/Gallery.jpg"/>
+                        </div>
+                        <h3>Media</h3>
+                    </div>
                 </div>
             </a>
         </div>
-       
+
+        <br>
+            
+        <div>
+            <h1 style="color: #3bac53" align="center">Educational Activities</h1><br>
+        </div>
+        <div class="row">
+            <a href="#">
+                <div class="column">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="../image/Explore.jpg"/>
+                        </div>
+                        <h3>Explore</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="column">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="../image/Learning.jpg"/>
+                        </div>
+                        <h3>Learning</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="column">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="../image/Gallery.jpg"/>
+                        </div>
+                        <h3>Media</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
         </section>
-
-      
-
+        
+        
+        
 
     <footer>
     <hr id="fthr">
@@ -198,7 +288,7 @@
                 <a id="aft" href="">Parents</a>
             </td>
             <td id="tbftth" >
-                <a id="aft" href="#">Educational Apps</a>
+                <a id="aft" href="#"></a>
             </td>
             <td id="tbftth" >
                 <a id="aft" href="#"></a>

@@ -1,34 +1,108 @@
-h1 { 
-font-family: "Open Sans"; 
-font-style: normal; 
-font-variant: normal; 
-font-weight: 700; 
-line-height: 26.4px; 
-} 
-h3 { 
-font-family: "Open Sans"; 
-font-style: normal; 
-font-variant: normal; 
-font-weight: 700; 
-line-height: 15.4px; 
-} 
-p { 
-font-family: "Open Sans"; 
-font-style: normal; 
-font-variant: normal; 
-font-weight: 400; 
-line-height: 20px; 
-} 
-blockquote { 
-font-family: "Open Sans"; 
-font-style: normal; 
-font-variant: normal; 
-font-weight: 400; 
-line-height: 30px; } 
-pre { 
-font-family: "Open Sans";
-font-style: normal; 
-font-variant: normal; 
-font-weight: 400; 
-line-height: 18.5714px; 
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 50px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+h1 { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+} 
+
+h3 { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+}
+
+p { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px;
+    font-size: 20px;
+}
+
+blockquote { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; } 
+pre { 
+    font-family: "Open Sans";
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px; 
+}
+
+#home-tbg{
+    height: 220px; 
+    width: 200px;   
+    box-shadow: 1px 1px 5px gray ;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.image-box{
+    margin-bottom: 12%; 
+    margin-top: 3%;  
+    border-radius: 10px;
+}
+
+/*Style button chung*/
+.btn-common{
+    display: inline-block;
+    background: #3bac53;
+    color: #fff;
+    padding: 20px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+    
+    .btn-common:hover{
+    background:#4fc769;
+    color:#fff;
+}
+
