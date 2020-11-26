@@ -11,7 +11,7 @@ for (var i=0; i <=n ;i++){
         document.write('</div>');
         document.write('<div class="row" >');
     }
-    document.write('<a id="cott" href="#">');
+    document.write('<a id="cott" href="'+link[i]+'">');
     
     if ((i==0) || (i %5 ==0) ){
         document.write('<div class="col-sm-2 col-sm-offset-1" id="tbg" >');
