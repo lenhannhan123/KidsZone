@@ -16,80 +16,66 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!--add css-->
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/HeaderAside.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/HeaderAside.css">
+    <link rel="stylesheet" href="../css/learning.css">
+    <link rel="stylesheet" href="../css/kidsZone.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <!--add javacript-->
-    <Script>
-        function play(ms,aut){
-            var audio = new Audio(ms);
-            audio.play();
-            if (aut==1){
-                audio.autoplay()
-            }
-            
-        }
-    </Script>
-    
+    <script src="../js/kidsZone.js"></script>
+   
+
+
     <style>
         /*Add font navbar*/ 
         @font-face{
-            src:url(fonts/Modak-Regular.ttf); /* Add font from url */
             font-family: Modak; /*Rename font*/
+            src:url(../fonts/Modak-Regular.ttf); /* Add font from url */
         }
     </style>
+
 </head>
 <body>
 
     
     <div class="container-fluid" > 
-    
         <nav class="nvtb">
-
-
-            <div id="snow" >
-                <img src="gif/snow.gif" height="300px" >
-                <img src="gif/snow.gif" height="300px" >
-                <img src="gif/snow.gif" height="300px" >
-                <img src="gif/snow.gif" height="300px" >
-                
-            </div>
-
             <div id="LoginRegister">
                
                     <a href="#" id="btn01" >
-                        <input id="btnlg" type="button" class="btnreg" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
+                        <input id="btnlg" type="button" class="btnreg" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
                     </a>
                     <a href="#" id="btn01" >
-                        <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
+                        <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
                     </a>
             </div>
             <div id="logo">
                 <a href="#">
-                    <img src="image/logo.png" style="width: 140px;" width="100%">
+                    <img src="../image/logo.png" style="width: 140px;" width="100%">
                 </a>
             </div>       
 
             <div id="sun" >
-                <img src="gif/sun.gif" style="width: 120px;" >
+                <img src="../gif/sun.gif" style="width: 120px;" >
             </div>
 
-            <div  id="menu" >
+            <div  id="menu">
                 <Ul>
                     <li id="lih" >
-                        <a id="home" href="#" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
-                            <img src="gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
-                            <span>Home</span> 
+                        <a id="home" href="#" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                            <img src="../gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
+                            <span class="Modak">Home</span> 
                         </a>
                     </li>
                     <li id="lih">
-                        <a id="learning" href="#" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
-                            <img src="gif/learngif.gif"  style="width: 70px; margin-bottom: 20px;">
+                        <a id="learning" href="categories.html" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                            <img src="../gif/learngif.gif"  style="width: 70px; margin-bottom: 20px;">
                            <Span>Learning</Span> 
                         </a>
                     </li>
                     <li id="lih">
-                        <a id="contact" href="#" onmouseover="play('audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
-                            <img src="gif/contactg.gif"  style="width: 70px; margin-bottom: 20px;">
+                        <a id="contact" href="#" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                            <img src="../gif/contactg.gif"  style="width: 70px; margin-bottom: 20px;">
                             <Span>Contact Us</Span> 
                             
                         </a>
@@ -102,27 +88,62 @@
             </div>
 
             <div>
-                <img src="image/nav00.jpg" height="550px" width="100%" >
+                <img src="../image/nav00.jpg" height="550px" width="100%" >
             </div>
         </nav>
 
         
-
+        <!-- All body contents are inside below section -->
         <section>
-
-            <h1>The address Kids Zone</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3428616325946!2d106.66259811406837!3d10.785030592315678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed1f53481f5%3A0x366adde0d5174734!2zS2h1IHZ1aSBjaMahaSBnaeG6o2kgdHLDrSBUaOG7jyBUcuG6r25n!5e0!3m2!1svi!2s!4v1605605574172!5m2!1svi!2s" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-           
+        <!--First three columns of home page-->
+        <!-- <div class="container - fluid">
+            <br>
+            <h1 style="color: #5b79ca" align="center">Welcome to Kids-Zone</h1><br>
+            <div class="row">
+                <div class="col-sm-4" id="tbg">
+                    <div class="image-box" style="background-color:lightpink;" align="center">
+                        <img src="image/Explore.jpg" style='height: 100%; width: 100%; object-fit: contain'>
+                    </div>
+                    <h4>
+                        Explore!
+                    </h4>
+                </div>
+                <div class="col-sm-4" style="background-color:lightblue;" align="center">
+                    <h4>
+                        Learning
+                    </h4>
+                    <img src="image/Learning.jpg" style='height: 100%; width: 100%; object-fit: contain'>
+                </div>
+                <div class="col-sm-4" style="background-color:lightgreen;" align="center">
+                    <h4>
+                        Gallery
+                    </h4>
+                    <img src="image/Gallery.jpg"  style='height: 100%; width: 100%; object-fit: contain'>
+                </div>
+            </div>
+        </div> -->
+        <!--End of first three columns of homepage-->
+        <div class="row" >
+            <a href="#">
+                <div class="col-sm-2 col-sm-offset-1" id="tbg" >
+                    <div class="image-box" style="margin-bottom: 12%; margin-top: 3%;  border-radius: 20px; "  >
+                        <img src="../image/abc00.png" width="150px" height="150px" />
+                    </div>
+                    <div id="activity" >Alphabet Game</div> 
+                </div>
+            </a>
+        </div>
+       
         </section>
 
-
+      
 
 
          <footer>
             <hr id="fthr">
             <div>
                 <a href="#">
-                    <img src="image/logo.png" style="width: 200px; " width="100%">
+                    <img src="../image/logo.png" style="width: 200px; " width="100%">
                 </a>
             </div>   
            <table id="tbft" >
@@ -137,7 +158,7 @@
                         Contact Us
                     </th>
                     <td rowspan="5" >
-                        <img src="image/sun.png" style="margin-left: 100px; width: 200px;" alt="">
+                        <img src="../image/sun.png" style="margin-left: 100px; width: 200px;" alt="">
                 </td>
                 </tr>
                 <tr>
@@ -201,7 +222,7 @@
          </footer>
 
          <aside class="asde" >
-            <a href="#" ><img src="image/arow.png" alt="icon" width="65px" ></a> 
+            <a href="#" ><img src="../image/arow.png" alt="icon" width="65px" ></a> 
            </aside>
     </div>
     
