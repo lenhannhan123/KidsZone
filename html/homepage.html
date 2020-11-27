@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!--Bootraps CDN-->
-    <!-- Latest compiled and minified CSS -->
+    <title>Home Page</title>
+<!--Favicon logo-->
+    <link rel="icon" href="../image/logo.png" type="image/gif" sizes="16x16">
+<!--Bootraps CDN-->
+<!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
+<!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
+<!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!--add css-->
+<!--add css-->
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/HeaderAside.css">
     <link rel="stylesheet" href="../css/learning.css">
     <link rel="stylesheet" href="../css/kidsZone.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+<<<<<<< HEAD
     <!--add javacript-->
     <script src="../js/kidsZone.js"></script>
+=======
+<!--add javacript-->
+>>>>>>> 7950c0bc8be81adee861a5da3dd6d648faff1082
     <Script>
         function play(ms,aut){
             var audio = new Audio(ms);
@@ -45,7 +50,10 @@
 </head>
 <body>
     <div class="container-fluid" > 
+        
+    <!--Navigation Bar-->  
         <nav class="nvtb">
+            <!--login and register-->
             <div id="LoginRegister">               
                     <a href="#" id="btn01" >
                         <input id="btnlg" type="button" class="btnreg" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
@@ -54,32 +62,36 @@
                         <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
                     </a>
             </div>
+
+        <!--Logo-->
             <div id="logo">
-                <a href="#">
+                <a href="homepage.html">
                     <img src="../image/logo.png" style="width: 140px;" width="100%">
                 </a>
-            </div>       
+            </div>  
 
+        <!--gif sun-->
             <div id="sun" >
                 <img src="../gif/sun.gif" style="width: 120px;" >
             </div>
 
+        <!--Menu-->
             <div  id="menu" >
                 <Ul>
                     <li id="lih" >
-                        <a id="home" href="#" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <a id="home" href="homepage.html" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
                             <img src="../gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
                             <span>Home</span> 
                         </a>
                     </li>
                     <li id="lih">
-                        <a id="learning" href="#" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <a id="learning" href="categories.html" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
                             <img src="../gif/learngif.gif"  style="width: 70px; margin-bottom: 20px;">
                            <Span>Learning</Span> 
                         </a>
                     </li>
                     <li id="lih">
-                        <a id="contact" href="#" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <a id="contact" href="Contactus.html" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
                             <img src="../gif/contactg.gif"  style="width: 70px; margin-bottom: 20px;">
                             <Span>Contact Us</Span> 
                             
@@ -87,7 +99,7 @@
                     </li>
                 </Ul>
             </div>
-
+        <!--Wooden Board Animation-->
             <div id="table01"  >
                 <p id="brd01" >Home</p>
             </div>
@@ -234,14 +246,16 @@
 
 
 
-
+    <!--Footer-->
          <footer>
             <hr id="fthr">
+          <!--Logo-->
             <div>
-                <a href="#">
+                <a href="homepage.html">
                     <img src="../image/logo.png" style="width: 200px; " width="100%">
                 </a>
             </div>   
+        <!--Content Footer-->
            <table id="tbft" >
                 <tr>
                     <th id="tbftth" style=" color: rgb(0, 183, 255); font-size: 15pt;" >
