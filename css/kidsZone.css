@@ -87,7 +87,7 @@ pre {
 }
 
 /*Style button chung*/
-.btn-common{
+.btn-common {
     display: inline-block;
     background: #3bac53;
     color: #fff;
@@ -97,8 +97,23 @@ pre {
     transition: background 0.5s;
 }
     
-    .btn-common:hover{
+.btn-common:hover{
     background:#4fc769;
     color:#fff;
 }
 
+/* Slider Banner homepage */
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
