@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vowels Activity</title>
-    <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
+    <!--Favicon logo-->
+        <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
     <!--Angular-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -20,12 +21,11 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!--add css-->
-    <link rel="stylesheet" href="../../../css/navbar.css">
-    <link rel="stylesheet" href="../../../css/HeaderAside.css">
-    <link rel="stylesheet" href="../../../css/learning.css">
+        <link rel="stylesheet" href="../../../css/navbar.css">
+        <link rel="stylesheet" href="../../../css/HeaderAside.css">
+        <link rel="stylesheet" href="../../../css/learning.css">
     <!--add javacript-->
     <Script>
-
         function play(ms,aut){
             var audio = new Audio(ms);
             audio.play();
@@ -35,10 +35,6 @@
             
         }
 
-    
-
-        var n=6;
-
     </Script>
     
     <style>
@@ -47,6 +43,7 @@
             src:url(../../../fonts/Modak-Regular.ttf); /* Add font from url */
             font-family: Modak; /*Rename font*/
         }  
+        /*Button View All Activities */
         #buttonView{
             width: 200px; 
             height: 60px; 
@@ -65,10 +62,11 @@
 <body>
 
     
-    <div class="container-fluid" > 
+    <div class="container-fluid" >
+    <!--Navigation Bar-->   
         <nav class="nvtb">
+        <!--login and register-->
             <div id="LoginRegister">
-               
                     <a href="#" id="btn01" >
                         <input id="btnlg" type="button" class="btnreg" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
                     </a>
@@ -76,16 +74,21 @@
                         <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
                     </a>
             </div>
+
+            
+        <!--Logo-->
             <div id="logo">
-                <a href="#">
+                <a href="../../homepage.html">
                     <img src="../../../image/logo.png" style="width: 140px;" width="100%">
                 </a>
             </div>       
-
+        
+        <!--gif sun-->
             <div id="sun" >
                 <img src="../../../gif/sun.gif" style="width: 120px;" >
             </div>
 
+        <!--Menu-->
             <div  id="menu" >
                 <Ul>
                     <li id="lih" >
@@ -109,7 +112,8 @@
                     </li>
                 </Ul>
             </div>
-
+        
+        <!--Wooden Board Animation-->
             <div id="table01"  >
                 <p id="brd01" >Alphabetical</p>
             </div>
@@ -118,8 +122,6 @@
                 <img src="../../../image/nav00.jpg" height="550px" width="100%" >
             </div>
         </nav>
-
-        
 
         <section>
             <div class="row" >
@@ -211,17 +213,16 @@
                 
         </section>
 
-
-
-
          <footer style="margin-top: 20px;"  >
              
             <hr id="fthr">
+            <!--Logo-->
             <div>
-                <a href="#">
+                <a href="../../homepage.html">
                     <img src="../../../image/logo.png" style="width: 200px; " width="100%">
                 </a>
             </div>   
+        <!--Content Footer-->
            <table id="tbft" >
                 <tr>
                     <th id="tbftth" style=" color: rgb(0, 183, 255); font-size: 15pt;" >
@@ -296,7 +297,7 @@
            </table>
                 <h4 style="text-align: center;" >Copyright 2020 NPT Group All right reserved.</h4>                    
          </footer>
-
+        <!-- Scrolling to the top button -->
          <aside class="asde" >
           
             <a href="#" ><img src="../../../image/arow.png" alt="icon" width="65px" ></a> 

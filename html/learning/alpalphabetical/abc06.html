@@ -4,112 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online ABC Puzzle Game</title>
-    <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
+<!--Favicon logo-->
+<link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
-    <!--Angular-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!--Angular-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-    <!--Bootraps CDN-->
-    <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--Bootraps CDN-->
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!--add css-->
+<!--add css-->
     <link rel="stylesheet" href="../../../css/navbar.css">
     <link rel="stylesheet" href="../../../css/HeaderAside.css">
     <link rel="stylesheet" href="../../../css/learning.css">
-    <!--add javacript-->
-    <Script>
-
-        function play(ms,aut){
-            var audio = new Audio(ms);
-            audio.play();
-            if (aut==1){
-                audio.autoplay()
-            }
-            
+<!--add javacript-->
+<Script>
+    function play(ms,aut){
+        var audio = new Audio(ms);
+        audio.play();
+        if (aut==1){
+            audio.autoplay()
         }
+        
+    }
 
-    
+</Script>
 
-        var n=6;
-
-    </Script>
-    
-    <style>
-        /*Add font navbar*/ 
-        @font-face{
-            src:url(../../../fonts/Modak-Regular.ttf); /* Add font from url */
-            font-family: Modak; /*Rename font*/
-        }  
-        #buttonView{
-            width: 200px; 
-            height: 60px; 
-            border: none; 
-            background-color: #ee3c06; 
-            margin-left: 15%; 
-            margin-top: 1%; 
-            border-radius: 1000px; 
-            box-shadow: 2px 5px 10px gray; 
-            color: white; 
-            font-size: 12pt;
-            font-weight: bold;
-        }
-    </style>
+<style>
+    /*Add font navbar*/ 
+    @font-face{
+        src:url(../../../fonts/Modak-Regular.ttf); /* Add font from url */
+        font-family: Modak; /*Rename font*/
+    }  
+    /*Button View All Activities */
+    #buttonView{
+        width: 200px; 
+        height: 60px; 
+        border: none; 
+        background-color: #ee3c06; 
+        margin-left: 15%; 
+        margin-top: 1%; 
+        border-radius: 1000px; 
+        box-shadow: 2px 5px 10px gray; 
+        color: white; 
+        font-size: 12pt;
+        font-weight: bold;
+    }
+</style>
 </head>
 <body>
 
-    
-    <div class="container-fluid" > 
-        <nav class="nvtb">
-            <div id="LoginRegister">
-               
-                    <a href="#" id="btn01" >
-                        <input id="btnlg" type="button" class="btnreg" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
-                    </a>
-                    <a href="#" id="btn01" >
-                        <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
-                    </a>
-            </div>
-            <div id="logo">
-                <a href="#">
-                    <img src="../../../image/logo.png" style="width: 140px;" width="100%">
+
+<div class="container-fluid" >
+<!--Navigation Bar-->   
+    <nav class="nvtb">
+    <!--login and register-->
+        <div id="LoginRegister">
+                <a href="#" id="btn01" >
+                    <input id="btnlg" type="button" class="btnreg" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
                 </a>
-            </div>       
+                <a href="#" id="btn01" >
+                    <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
+                </a>
+        </div>
 
-            <div id="sun" >
-                <img src="../../../gif/sun.gif" style="width: 120px;" >
-            </div>
+        
+    <!--Logo-->
+        <div id="logo">
+            <a href="../../homepage.html">
+                <img src="../../../image/logo.png" style="width: 140px;" width="100%">
+            </a>
+        </div>       
+    
+    <!--gif sun-->
+        <div id="sun" >
+            <img src="../../../gif/sun.gif" style="width: 120px;" >
+        </div>
 
-            <div  id="menu" >
-                <Ul>
-                    <li id="lih" >
-                        <a id="home" href="../../homepage.html" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
-                            <img src="../../../gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
-                            <span>Home</span> 
-                        </a>
-                    </li>
-                    <li id="lih">
-                        <a id="learning" href="../../categories.html" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
-                            <img src="../../../gif/learngif.gif"  style="width: 70px; margin-bottom: 20px;">
-                           <Span>Learning</Span> 
-                        </a>
-                    </li>
-                    <li id="lih">
-                        <a id="contact" href="#" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
-                            <img src="../../../gif/contactg.gif"  style="width: 70px; margin-bottom: 20px;">
-                            <Span>Contact Us</Span> 
-                            
-                        </a>
-                    </li>
-                </Ul>
-            </div>
-
+    <!--Menu-->
+        <div  id="menu" >
+            <Ul>
+                <li id="lih" >
+                    <a id="home" href="../../homepage.html" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <img src="../../../gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
+                        <span>Home</span> 
+                    </a>
+                </li>
+                <li id="lih">
+                    <a id="learning" href="../../categories.html" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <img src="../../../gif/learngif.gif"  style="width: 70px; margin-bottom: 20px;">
+                       <Span>Learning</Span> 
+                    </a>
+                </li>
+                <li id="lih">
+                    <a id="contact" href="#" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                        <img src="../../../gif/contactg.gif"  style="width: 70px; margin-bottom: 20px;">
+                        <Span>Contact Us</Span> 
+                        
+                    </a>
+                </li>
+            </Ul>
+        </div>
+    
+    <!--Wooden Board Animation-->
             <div id="table01"  >
                 <p id="brd01" >Alphabetical</p>
             </div>
@@ -213,14 +217,16 @@
 
 
 
-         <footer style="margin-top: 20px;"  >
+        <footer style="margin-top: 20px;"  >
              
             <hr id="fthr">
+            <!--Logo-->
             <div>
-                <a href="#">
+                <a href="../../homepage.html">
                     <img src="../../../image/logo.png" style="width: 200px; " width="100%">
                 </a>
             </div>   
+        <!--Content Footer-->
            <table id="tbft" >
                 <tr>
                     <th id="tbftth" style=" color: rgb(0, 183, 255); font-size: 15pt;" >
@@ -295,7 +301,7 @@
            </table>
                 <h4 style="text-align: center;" >Copyright 2020 NPT Group All right reserved.</h4>                    
          </footer>
-
+        <!-- Scrolling to the top button -->
          <aside class="asde" >
           
             <a href="#" ><img src="../../../image/arow.png" alt="icon" width="65px" ></a> 
