@@ -133,12 +133,79 @@
                      </a>
             </div>
 
-            
+            <div class="row" >
+ 
+            <script>
+                var temp=1;
+                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/Vowels-Activity/Vowels-Activity-';
+                    str2='/" frameborder="0" width="100%" height="700px" ></iframe>';
+                function check(){
+                    if(temp==1){
+                        temp=3;
+                        document.getElementById('number').innerHTML=temp;
+                        document.getElementById('ifame01').innerHTML=str.concat(temp,str2);
+                    } else{
+                        temp=temp-1
+                        document.getElementById('number').innerHTML=temp;
+                        document.getElementById('ifame01').innerHTML=str.concat(temp,str2);
+                    };
+                        
+                };
+                
+                function check02(){
+
+                    if (temp==3){
+                        temp=1;
+                        document.getElementById('number').innerHTML=temp;
+                        document.getElementById('ifame01').innerHTML=str.concat(temp,str2);
+                    } else {
+                        temp=temp+1
+                        document.getElementById('number').innerHTML=temp;
+                        document.getElementById('ifame01').innerHTML=str.concat(temp,str2);
+                    };
+                    
+                };
+
+                function check03(temp2){
+                        temp=temp2;
+                        document.getElementById('number').innerHTML=temp;
+                        document.getElementById('ifame01').innerHTML=str.concat(temp,str2);
+                };
+            </script>
+
+
+            <div class="col-sm-1" >
+                <a onclick="check()" href="#"><img src="../../../image/arrowleft.png" width="100%" style="width: 50px;" id="arrow-button"></a>
+            </div>
+        
+            <div class="col-sm-10" >
+                <ul  style="margin-left: 40%;" class="nav navbar-nav" >
+                <li   class="dropdown">
+                    <a class="dropdown-toggle" id="dropdow" data-toggle="dropdown" href="#">Vowels-Activity- <span id="number" ></span>
+                        <script>
+                            document.getElementById('number').innerHTML=temp;
+                            
+                        </script>
+                        <span class="caret"></span>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <script>for(var i=1;i<=3;i++){document.write('<li><a onclick="check03('+i+')" href="#">Vowels-Activity-'+i+'</a></li>')}</script>
+                        </ul>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-sm-1" >
+                <a onclick="check02()" href="#"><img src="../../../image/arrowright.png" width="100%" style="width: 50px;" id="arrow-button"></a>
+            </div>
+        </div>
             
             <div class="row" style="margin-top: 2%;" >
                 <div class="col-sm-10 col-sm-offset-1" >
-                    <iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/Vowels-Activity/Vowels-Activity-1/" frameborder="0" width="100%" height="700px" ></iframe>
+                    <div id="ifame01" ></div>
+                    <script>document.getElementById('ifame01').innerHTML=str.concat(temp,str2);</script>
                 </div>
+
+
             </div>
 
                 
