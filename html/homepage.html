@@ -16,6 +16,11 @@
 <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet"
+        href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+
 <!--add css-->
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/HeaderAside.css">
@@ -67,7 +72,7 @@
                     <a data-toggle="modal"  data-target="#myModal" id="btn01" >
                         <input id="btnlg" type="button"  class="btnreg" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
                     </a>
-                    <a data-toggle="modal" data-target="#signinPage" id="btn01" >
+                    <a data-toggle="modal" data-target="#login" id="btn01" >
                         <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
                     </a>
             </div> 
@@ -256,7 +261,6 @@
         </section>
 
 
-
     <!--Footer-->
          <footer>
             <hr id="fthr">
@@ -344,92 +348,181 @@
 </html>
 
 
-<!--Modal form of signin-->
 
-<div class="modal fade" id="myModal" role="dialog">
+
+    
+       
+       
+    
+    
+    
+        
+        
+        
+        
+    
+
+
+
+<!--Modal form of signin-->
+<script>var home='homepage.html'; image01= '../image/BackgroundModal.jpg'</script>
+<script src="../js/RegisterLogin.js"></script>
+<script src="../js/checkerror.js" ></script>
+    
+      
+
+        
+                
+                
+        
+        
+            
+        
+                
+                    
+                    
+                        
+                      
+                    
+                
+                
+                   
+                    
+                        
+                       
+                   
+                
+                
+                   
+                   
+                        
+                       
+                    
+                
+                
+                    
+                    
+                        
+                        
+                    
+                
+               
+                   
+                       
+                            
+                        
+                        
+                            
+                        
+                    
+            
+                
+                    
+                        
+                    
+                
+                
+                   
+                       
+                    
+                   
+                       
+                    
+                
+                 
+        
+ 
+
+
+<div class="modal fade" id="login" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" style="text-align: center;" >Register</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 id="font-form" class="modal-title" style="text-align: center; font-size:25pt ; " >Login</h4>
         </div>
         <div class="modal-body">
-            <form class="form-horizontal" action="http://vnexpress.net"  id="contactForm" >
+            <form class="form-horizontal" action="http://vnexpress.net"  id="loginform" >
         
                 <div  class="form-group">
-                    <label class="control-label col-lg-3" for="mail"  >Email</label>
+                    <label id="font-form" class="control-label col-lg-4" for="User"  >User Name</label>
                     <div class="col-lg-7" >
                         <input type="mail" class="form-control" 
-                        id="mail" name="email" placeholder="Enter mail" >
+                        id="form-inp" name="user1" placeholder="Enter User Name" >
                     </div>
                 </div>
-        
                 <div  class="form-group">
-                    <label class="control-label col-lg-3" for="User"  >User</label>
-                    <div class="col-lg-7" >
-                        <input type="mail" class="form-control" 
-                        id="user" name="user " placeholder="Enter mail" >
-                    </div>
-                </div>
-        
-        
-                <div  class="form-group">
-                    <label class="control-label col-lg-3" for="pwd"  >Password</label>
+                    <label id="font-form" class="control-label col-lg-4" for="pwd"  >Password</label>
                     <div class="col-lg-7" >
                         <input type="password" class="form-control" 
-                        id="pwd" name="password" placeholder="Enter Password" >
-                    </div>
-                </div>
-        
-                    <div class="form-group">
-                        <label class="control-label col-lg-3" for="pwd1">Confirm password</label>
-                        <div  class="col-lg-7">
-                            <input type="password" class="form-control"
-                             name="confirmPassword" placeholder="Enter Confirm Password" />
-                        </div>
-                    </div>
-        
-        
-                <div  class="form-group">
-                    <label class="control-label col-lg-3" for="phone"  >Phone</label>
-                    <div class="col-lg-7" >
-                        <input type="phone" class="form-control" 
-                        id="phone" name="phone" placeholder="Enter Phone" >
-                    </div>
-                </div >
-        
-                <div  class="form-group">
-                    <div class="col-lg-offset-3 col-lg-7" >
-                        <label class="radio-inline"  >
-                            <input type="radio" id="gender" name="gender">Male
-                        </label>
-                        <label class="radio-inline"  >
-                            <input type="radio" id="gender" name="gender"> Female
-                        </label>
-                    </div>
-                </div>
-        
-        
-                <div class="form-group">
-                    <div class="col-md-9 col-md-offset-3">
-                        <div id="messages"></div>
+                        id="form-inp" name="password1" placeholder="Enter Password" >
                     </div>
                 </div>
                 
-        
-           
-        
+                <div class="form-group">
+                    <div class="col-md-8 col-md-offset-3">
+                        <div style="font-size: 11pt; font-weight: bold; " id="messages1"></div>
+                    </div>
+                </div>   
+                <div class="form-group">
+                    <div class=" col-md-offset-3 col-md-2" >
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div class="col-md-2" >
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+                    </div>
+                </div> 
+            </form>     
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-          <button type="submit" class="btn btn-default">Submit</button>
-        </div>
-        </form>
-        </div>
-      </div>
-      
+               
     </div>
-  </div>
-  
+    </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+      $('#loginform').bootstrapValidator({
+          container: '#messages',
+          excluded: ':disabled',
+          feedbackIcons: {
+              valid: 'glyphicon glyphicon-ok',
+              invalid: 'glyphicon glyphicon-remove',
+              validating: 'glyphicon glyphicon-refresh'
+          },
+          fields: {
+
+            user1:{
+                  validators:{
+                      notEmpty: {
+                          message1: 'User Namw is required and cannot be empty'
+                      }
+                  }
+              
+              },
+              password1:{
+                  validators: {
+                      notEmpty: {
+                          message1: 'Password is required and cannot be empty'
+                      },
+                      stringLength: {
+                          min: 5,
+                          message1: 'Password has at least 5 characters'
+                      },
+                      regexp: {
+                          regexp: /^(\w+[0-9]+|([0-9]+\w+))$/i,
+                          message1: 'Password must contain both alphabet characters and numbers'
+                      }
+                  }
+
+              },
+
+          }
+
+
+    });
+  });
+
+</script> 
+
+
