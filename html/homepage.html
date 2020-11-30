@@ -64,7 +64,7 @@
         <nav class="nvtb">
             <!--login and register-->
            <div id="LoginRegister">              
-                    <a data-toggle="modal"  data-target="#signupPage" id="btn01" >
+                    <a data-toggle="modal"  data-target="#myModal" id="btn01" >
                         <input id="btnlg" type="button"  class="btnreg" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
                     </a>
                     <a data-toggle="modal" data-target="#signinPage" id="btn01" >
@@ -343,70 +343,93 @@
 </body>
 </html>
 
-<!-- Modal form of register -->
-<div class="modal fade" id="signupPage">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            
-            <div class="modal-header text-center">
-                <h4 class="modal-title text-center w-100 font-weight-bold">Sign Up</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
-            </div>
-            <div class="modal-body mx-3">
-                <div class="md-form mb-5">
-                    <label>Your Name</label>
-                    <i class=""></i>
-                    <input type="text" class="form-control validate">
-                </div>
-
-                <div class="md-form mb-5">
-                    <label>Your Email</label>
-                    <i class=""></i>
-                    <input type="email" class="form-control validate">
-                </div>
-
-                <div class="md-form mb-5">
-                    <label>Your Password</label>
-                    <i class=""></i>
-                    <input type="password" class="form-control validate">
-                </div>
-            </div>
-            
-            <div class="modal-footer d-flex">
-                <button class="btn btn-primary">Sign up</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!--Modal form of signin-->
 
-<div class="modal fade" id="signinPage">
+<div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
+      <!-- Modal content-->
       <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: center;" >Register</h4>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" action="http://vnexpress.net"  id="contactForm" >
         
-        <div class="modal-header text-center">
-          <h3 class="modal-title w-100 dark-grey-text font-weight-bold">Sign In</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
+                <div  class="form-group">
+                    <label class="control-label col-lg-3" for="mail"  >Email</label>
+                    <div class="col-lg-7" >
+                        <input type="mail" class="form-control" 
+                        id="mail" name="email" placeholder="Enter mail" >
+                    </div>
+                </div>
+        
+                <div  class="form-group">
+                    <label class="control-label col-lg-3" for="User"  >User</label>
+                    <div class="col-lg-7" >
+                        <input type="mail" class="form-control" 
+                        id="user" name="user " placeholder="Enter mail" >
+                    </div>
+                </div>
+        
+        
+                <div  class="form-group">
+                    <label class="control-label col-lg-3" for="pwd"  >Password</label>
+                    <div class="col-lg-7" >
+                        <input type="password" class="form-control" 
+                        id="pwd" name="password" placeholder="Enter Password" >
+                    </div>
+                </div>
+        
+                    <div class="form-group">
+                        <label class="control-label col-lg-3" for="pwd1">Confirm password</label>
+                        <div  class="col-lg-7">
+                            <input type="password" class="form-control"
+                             name="confirmPassword" placeholder="Enter Confirm Password" />
+                        </div>
+                    </div>
+        
+        
+                <div  class="form-group">
+                    <label class="control-label col-lg-3" for="phone"  >Phone</label>
+                    <div class="col-lg-7" >
+                        <input type="phone" class="form-control" 
+                        id="phone" name="phone" placeholder="Enter Phone" >
+                    </div>
+                </div >
+        
+                <div  class="form-group">
+                    <div class="col-lg-offset-3 col-lg-7" >
+                        <label class="radio-inline"  >
+                            <input type="radio" id="gender" name="gender">Male
+                        </label>
+                        <label class="radio-inline"  >
+                            <input type="radio" id="gender" name="gender"> Female
+                        </label>
+                    </div>
+                </div>
+        
+        
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <div id="messages"></div>
+                    </div>
+                </div>
+                
+        
+           
+        
         </div>
-  
-        <div class="modal-body mx-4">
-          <div class="md-form">
-            <input type="email" class="form-control validate">
-            <label data-error="wrong" data-success="right">Your Email</label>
-          </div>
-  
-          <div class="md-form">
-            <input type="password" class="form-control validate">
-            <label data-error="wrong" data-success="right">Your Password</label>
-            <p class="font-small blue-text d-flex justify-content-end"><a href="#" class="blue-text ml-1">Forgot Password?</a></p>
-          </div>
-  
-          <div class="text-center mb-3">
-            <button type="button" class="btn btn-primary btn-block z-depth-1a">Sign in</button>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+          <button type="submit" class="btn btn-default">Submit</button>
         </div>
-
+        </form>
+        </div>
       </div>
+      
     </div>
+  </div>
+  
 </div>
