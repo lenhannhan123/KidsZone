@@ -66,14 +66,14 @@
 <!--Navigation Bar-->   
     <nav class="nvtb">
     <!--login and register-->
-        <div id="LoginRegister">
-                <a href="#" id="btn01" >
-                    <input id="btnlg" type="button" class="btnreg" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
-                </a>
-                <a href="#" id="btn01" >
-                    <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
-                </a>
-        </div>
+    <div id="LoginRegister">
+        <a data-toggle="modal" data-target="#myModal" id="btn01" >
+            <input id="btnlg"  type="button" class="btnreg" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
+        </a>
+        <a data-toggle="modal" data-target="#login" id="btn01" >
+            <input id="btnlg"  style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
+        </a>
+</div>
 
         
     <!--Logo-->
@@ -236,3 +236,7 @@
 
 </body>
 </html>
+
+<script>var home='../../homepage.html'; image01= '../../../image/BackgroundModal.jpg'</script>
+<script src="../../../js/RegisterLogin.js"></script>
+<script src="../../../js/checkerror.js" ></script>
