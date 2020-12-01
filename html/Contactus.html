@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 <!--add javacript-->
+    <script src="../js/kidsZone.js"></script>
     <Script>
         function play(ms,aut){
             var audio = new Audio(ms);
@@ -115,9 +116,8 @@
     <!-- All body contents are inside below section -->
         <section>
     <!-- Contact Us -->
-
-<!-- <html> -->
-        <!-- <style type="text/css">
+    <meta charset="utf-8">
+        <style type="text/css">
 	        .container {
 	        	width: 80%;
 	            margin: auto;
@@ -146,37 +146,37 @@
 			}
 
 			input[type=submit]:hover {
-			    background-color: #45a049;
+			    background-color: #45a049;      
 			}
-        </style> -->
-
+        </style>
+    <body> 
 		<div class="container">
 		   <h2 style="color: rgb(0, 183, 255);">Contact Us</h2>
             <form id="contactForm" method="post" class="form-horizontal" action="Homepage.html">
                 <!-- Capture user error about First name-->
                 <div class="form-group">
-                  <label class="col-md-2 control-label">First name:</label>
+                  <label class="col-md-2 control-label">First name: </label>
                     <div class="col-md-6">
                         <input type="text" class="form-control" name="firstname" required placeholder="Enter first name...">
                 </div>
             </div>
                 <!-- Capture user error about Last name -->
                 <div class="form-group">
-                  <label class="col-md-2 control-label">Last name:</label>
+                  <label class="col-md-2 control-label">Last name: </label>
                     <div class="col-md-6">
                       <input type="text" class="form-control" name="Lastname" required placeholder="Enter last name...">
                 </div>
             </div>
                 <!-- Capture user error about email -->
                 <div class="form-group">
-                  <label class="col-md-2 control-label">Email:</label>
+                  <label class="col-md-2 control-label">Email: </label>
                     <div class="col-md-6">
                       <input type="email" class="form-control" name="email" required placeholder="Enter email...">
                 </div>
             </div>
                 <!-- Capture user error about Phone number -->
                 <div class="form-group">
-                  <label class="col-md-2 control-label">Phone:</label>
+                  <label class="col-md-2 control-label">Phone: </label>
                     <div class="col-md-6">
                       <input type="number" class="form-control" name="Phone" required placeholder="Enter Phone...">
                 </div>
@@ -184,7 +184,7 @@
                 <!-- #messages is where the messages are placed inside -->
                 <div class="form-group">
                     <div class="col-md-1 col-md-offset-1">
-                        <label for="message">Message:</label>
+                        <label for="message">Message: </label>
                             </div>
                         <div class="col-md-2">
                     <textarea id="w3review" rows="4" cols="59" placeholder="Enter massage..."></textarea><br>
@@ -193,12 +193,12 @@
                 <!-- Send button -->
                 <div class="form-group">
                     <div class="col-md-2 col-md-offset-2">
-                    <button type="submit" class="btn btn-default">Submit</button>
+                        <button style="background-color:yellow;" type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </div>
             </form>
-        </div>
-        
+		</div>
+    </body>
         <!-- Information of our company -->
         <p style="color:rgb(0, 183, 255)"><strong>NPT GROUP:</strong></p>
     <p>
@@ -211,11 +211,16 @@
     </p>
     <p>
         <span class="glyphicon glyphicon-envelope"></span>
-        <small><i>Email:&nbsp;<a style="font-size: 95%;" href="mailto:	Zonekids@NPTGroup.com.vn">	Zonekids@NPTGroup.com.vn</a></i></small>
+        <small>
+            <i>Email:&nbsp;<a style="font-size: 95%;" href="mailto:	Zonekids@NPTGroup.com.vn">	Zonekids@NPTGroup.com.vn</a></i>
+        </small>
     </p>
         <img style="width: 100px;" src="../image/toanha.png">
         <!--Toggle navigation-->
-        <h1><p style="color: rgb(0, 183, 255);"><strong>Navigation: </strong></p></h1>
+        <h1>
+            <p style="color: rgb(0, 183, 255);">
+                <strong>Navigation: </strong></p>
+        </h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3428616325946!2d106.66259811406837!3d10.785030592315678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed1f53481f5%3A0x366adde0d5174734!2zS2h1IHZ1aSBjaMahaSBnaeG6o2kgdHLDrSBUaOG7jyBUcuG6r25n!5e0!3m2!1svi!2s!4v1605605574172!5m2!1svi!2s" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         
         </section>
