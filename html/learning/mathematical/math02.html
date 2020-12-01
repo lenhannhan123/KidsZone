@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Search</title>
+    <title>Kindergarten Number Learning</title>
 <!--Favicon logo-->
 <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
@@ -120,7 +120,7 @@
     <!--Wooden Board Animation-->
 
             <div id="table01"  >
-                <p id="brd01" >Word Search</p>
+                <p id="brd01" >Math</p>
             </div>
 
             <div>
@@ -132,8 +132,8 @@
 
         <section>
             <div class="row" >
-                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Alphabets Tracing</p>
-                <a href="alphabetical.html">
+                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Kindergarten Number Learning</p>
+                <a href="math.html">
                     <button class="col-sm-4" id="buttonView"  >
                         View All Activities 
                         <span class="glyphicon glyphicon-chevron-right" ></span>
@@ -146,48 +146,24 @@
  
             <script>
                 var temp=1;
-                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/word-search/';
+                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/Kindergarten-number-learning/';
                     str2='/" frameborder="0" width="100%" height="700px" ></iframe>';
                     str3='';
                     function chuyen(temp3){
                             switch (temp3){
                                 case 1:{
-                                    return "Animals";
+                                    return "Number-1";
                                     break
                                 }
                                 case 2:{
-                                    return"Birds";
-                                    break
-                                }
-                                case 3:{
-                                    return "Cities";
-                                    break
-                                }
-                                case 4:{
-                                    return"Colors";
-                                    break
-                                }
-                                case 5:{
-                                    return"Countries";
-                                    break
-                                }
-                                case 6:{
-                                    return"Fruits";
-                                    break
-                                }
-                                case 7:{
-                                    return"SeaAnimals";
-                                    break
-                                }
-                                case 8:{
-                                    return"Vegetables";
+                                    return"Number-2";
                                     break
                                 }
                             }
                     }
                 function check(){
                     if(temp==1){
-                        temp=8;
+                        temp=2;
                         document.getElementById('number').innerHTML=chuyen(temp);
                         document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
                     } else{
@@ -200,7 +176,7 @@
                 
                 function check02(){
 
-                    if (temp==8){
+                    if (temp==2){
                         temp=1;
                         document.getElementById('number').innerHTML=chuyen(temp);
                         document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
@@ -235,7 +211,7 @@
                         <span class="caret"></span>
                     </a>
                         <ul class="dropdown-menu">
-                            <script>for(var i=1;i<=8;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+chuyen(i)+'</a></li>')}</script>
+                            <script>for(var i=1;i<=2;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+chuyen(i)+'</a></li>')}</script>
                         </ul>
                   </li>
                 </ul>
