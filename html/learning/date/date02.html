@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online ABC Puzzle Game</title>
+    <title>Week Days Word Search</title>
 <!--Favicon logo-->
 <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
@@ -24,7 +24,6 @@
         href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
     <script type="text/javascript"
         src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
-
 <!--add css-->
     <link rel="stylesheet" href="../../../css/navbar.css">
     <link rel="stylesheet" href="../../../css/HeaderAside.css">
@@ -119,8 +118,9 @@
         </div>
     
     <!--Wooden Board Animation-->
+
             <div id="table01"  >
-                <p id="brd01" >Alphabetical</p>
+                <p id="brd01" >Date</p>
             </div>
 
             <div>
@@ -132,8 +132,8 @@
 
         <section>
             <div class="row" >
-                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Online ABC Puzzle Game</p>
-                <a href="alphabetical.html">
+                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Week Days Word Search</p>
+                <a href="date.html">
                     <button class="col-sm-4" id="buttonView"  >
                         View All Activities 
                         <span class="glyphicon glyphicon-chevron-right" ></span>
@@ -142,87 +142,21 @@
                      </a>
             </div>
 
-    <div class="row">
-
-            <script>
-                var temp=65;
-                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/AlphabetsPuzzle/';
-                    str2='/" frameborder="0" width="100%" height="700px" ></iframe>';
-                function check(){
-                    if(temp==65){
-                        temp=90;
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
-                    } else{
-                        temp=temp-1
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);  
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
-                    };
-                        
-                };
-                
-                function check02(){
-
-                    if (temp==90){
-                        temp=65;
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
-                    } else {
-                        temp=temp+1
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
-                    };
-                    
-                };
-
-                function check03(temp2){
-                        temp=temp2;
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
-                };
-            </script>
-
-
-            <div class="col-sm-1" >
-                <a onclick="check()" href="#"><img src="../../../image/arrowleft.png" width="100%" style="width: 50px;" id="arrow-button"></a>
-            </div>
-        
-            <div class="col-sm-10" >
-                <ul  style="margin-left: 40%;" class="nav navbar-nav" >
-                <li   class="dropdown">
-                    <a class="dropdown-toggle" id="dropdow" data-toggle="dropdown" href="#"><span id="number" ></span> -Puzzle
-                        <script>
-                            document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                            
-                        </script>
-                        <span class="caret"></span>
-                    </a>
-                        <ul class="dropdown-menu">
-                            <script>for(var i=65;i<=90;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+String.fromCharCode(i)+'-Puzzle</a></li>')}</script>
-                        </ul>
-                  </li>
-                </ul>
-            </div>
-            <div class="col-sm-1" >
-                <a onclick="check02()" href="#"><img src="../../../image/arrowright.png" width="100%" style="width: 50px;" id="arrow-button"></a>
-            </div>
-        </div>
+            
             
             <div class="row" style="margin-top: 2%;" >
                 <div class="col-sm-10 col-sm-offset-1" >
-                    <div id="iframe01" ></div>
-                    <script>document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);</script>
+                    <iframe src="https://www.freddiesville.com/members/games/days-week/week-days-word-search/week.html" frameborder="0" width="100%" height="700px" ></iframe>
                 </div>
             </div>
-            
-           
+
                 
         </section>
 
 
 
 
-        <footer style="margin-top: 20px;"  >
+         <footer style="margin-top: 20px;"  >
              
             <hr id="fthr">
             <!--Logo-->
@@ -296,6 +230,7 @@
                 <h4 style="text-align: center;" >Copyright 2020 NPT Group All right reserved.</h4>                    
          </footer>
         <!-- Scrolling to the top button -->
+
          <aside class="asde" >
           
             <a href="#" ><img src="../../../image/arow.png" alt="icon" width="65px" ></a> 
