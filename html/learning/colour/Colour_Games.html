@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal</title>
+    <title>Colour games</title>
     <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
     <!--Favicon logo-->
@@ -41,28 +41,32 @@
      //Add Activities variable and Activities Icon
 
         // Activities variable
-        var act=['Farm Animal',
-         'Birds Park',
-         'Sea Creatures',
-         'Explore the Zoo',
+        var act=['Vegetables',
+         'Numbers',
+         'Fruits',
+         'Alphabets',
+         'Christmas',
+         'Car'
         ];
 
             // Activities Icon
-        var actIcon=['../../../image/farm animal.png',
-                    '../../../image/birds.png',
-                    '../../../image/sea creatures.png',
-                    '../../../image/zoo animals.png',
+        var actIcon=['../../../image/vegetable03.png',
+                    '../../../image/.png',
+                    '../../../image/.png',
+                    '../../../image/.jpg',
         ]
             //Activities Link
         var link=[
-            'Farm_Animals.html',
-            'Birds_Park.html',
-            'Sea_Creatures.html',
-            'Explore_The_Zoo.html',
+            'Colour_Vegetables.html',
+            'Colour_Numbers.html',
+            'Colour_Fruits.html',
+            'Colour_Alphabets.html',
+            'Colour_Christmas.html',
+            'Colour_Car.html'
         ]
     
             //Number Box of Page
-        var n=3;
+        var n=6;
 
     </Script>
     
@@ -77,17 +81,19 @@
 <body>
 
     
-    <div class="container-fluid" > 
+    <div class="container-fluid" >
+        <!--Navigation Bar--> 
         <nav class="nvtb">
-            <div id="LoginRegister">
-               
-                    <a href="#" id="btn01" >
-                        <input id="btnlg" type="button" class="btnreg" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
-                    </a>
-                    <a href="#" id="btn01" >
-                        <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
-                    </a>
-            </div>
+            <!--login and register-->
+            <div id="LoginRegister">              
+                <a data-toggle="modal"  data-target="#myModal" id="btn01" >
+                    <input id="btnlg" type="button"  class="btnreg" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
+                </a>
+                <a data-toggle="modal" data-target="#login" id="btn01" >
+                    <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
+                </a>
+            </div> 
+
             <div id="logo">
                 <a href="#">
                     <img src="../../../image/logo.png" style="width: 140px;" width="100%">
@@ -123,7 +129,7 @@
             </div>
 
             <div id="table01"  >
-                <p id="brd01" >Animal</p>
+                <p id="brd01" >Color</p>
             </div>
 
             <div>
@@ -134,7 +140,7 @@
         
 
         <section>
-                <p id="title1"  align="center" >Animal Games</p>
+                <p id="title1"  align="center" >Coloring games</p>
                 <p id="content"  align="center"  >Welcome to learning centre of Kids Zone. Check out below to find amazing interactive 
                 activities for you!</p>
                 <script src="../../../js/learning01.js"></script>
@@ -225,3 +231,8 @@
 
 </body>
 </html>
+
+<!--Modal form of signin-->
+<script>var home='../../homepage.html'; image01= '../../../'</script>
+<script src="../../../js/RegisterLogin.js"></script>
+<script src="../../../js/checkerror.js" ></script>

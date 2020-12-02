@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Car</title>
+    <!--Favicon logo-->
+        <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
+
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!--Bootraps CDN-->
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--add css-->
+        <link rel="stylesheet" href="../../../css/navbar.css">
+        <link rel="stylesheet" href="../../../css/HeaderAside.css">
+        <link rel="stylesheet" href="../../../css/learning.css">
+    <!--add javacript-->
+    <Script>
+        function play(ms,aut){
+            var audio = new Audio(ms);
+            audio.play();
+            if (aut==1){
+                audio.autoplay()
+            }
+            
+        }
+
+    </Script>
+    
+    <style>
+        /*Add font navbar*/ 
+        @font-face{
+            src:url(../../../fonts/Modak-Regular.ttf); /* Add font from url */
+            font-family: Modak; /*Rename font*/
+        }  
+        /*Button View All Activities */
+        #buttonView{
+            width: 200px; 
+            height: 60px; 
+            border: none; 
+            background-color: #ee3c06; 
+            margin-left: 15%; 
+            margin-top: 1%; 
+            border-radius: 1000px; 
+            box-shadow: 2px 5px 10px gray; 
+            color: white; 
+            font-size: 12pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container-fluid" >
+    <!--Navigation Bar-->   
+        <nav class="nvtb">
+        <!--login and register-->
+        <div id="LoginRegister">              
+            <a data-toggle="modal"  data-target="#myModal" id="btn01" >
+                <input id="btnlg" type="button"  class="btnreg" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Register">
+            </a>
+            <a data-toggle="modal" data-target="#login" id="btn01" >
+                <input id="btnlg" style="margin-left: 10px;" type="button" class="btnlog" onmouseover="play('../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" value="Login">
+            </a>
+        </div> 
+
+            
+        <!--Logo-->
+            <div id="logo">
+                <a href="../../homepage.html">
+                    <img src="../../../image/logo.png" style="width: 140px;" width="100%">
+                </a>
+            </div>       
+        
+        <!--gif sun-->
+            <div id="sun" >
+                <img src="../../../gif/sun.gif" style="width: 120px;" >
+            </div>
+
+        <!--Menu-->
+            <div  id="menu" >
+                <Ul>
+                    <li id="lih" >
+                        <a id="home" href="../../homepage.html" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                            <img src="../../../gif/homeg.gif"  style="width: 50px; margin-bottom: 20px;">
+                            <span>Home</span> 
+                        </a>
+                    </li>
+                    <li id="lih">
+                        <a id="learning" href="../../categories.html" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                            <img src="../../../gif/learngif.gif"  style="width: 70px; margin-bottom: 20px;">
+                           <Span>Learning</Span> 
+                        </a>
+                    </li>
+                    <li id="lih">
+                        <a id="contact" href="#" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                            <img src="../../../gif/contactg.gif"  style="width: 70px; margin-bottom: 20px;">
+                            <Span>Contact Us</Span> 
+                            
+                        </a>
+                    </li>
+                </Ul>
+            </div>
+        
+        <!--Wooden Board Animation-->
+            <div id="table01"  >
+                <p id="brd01" >Colour</p>
+            </div>
+
+            <div>
+                <img src="../../../image/nav00.jpg" height="550px" width="100%" >
+            </div>
+        </nav>
+
+        <section>
+            <div class="row" >
+                <p class="col-sm-4 col-sm-offset-4 " id="title1" align="center" >Colour Car</p>
+                <a href="Colour_Games.html">
+                    <button class="col-sm-4" id="buttonView"  >
+                        View All Activities 
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    
+                    </button>
+                     </a>
+            </div>
+
+            <div class="row" >
+ 
+            <script>
+                var temp=1;
+                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/car-coloring/';
+                    str2='/" frameborder="0" width="100%" height="700px" ></iframe>';
+                    str3='';
+                    function chuyen(temp3){
+                            switch (temp3){
+                                case 1:{
+                                    return "Car1";
+                                    break
+                                }
+                                case 2:{
+                                    return "Car2";
+                                    break
+                                }
+                                case 3:{
+                                    return "Car3";
+                                    break
+                                }
+                                case 4:{
+                                    return "Car4";
+                                    break
+                                }
+                                case 5:{
+                                    return "Car5";
+                                    break
+                                }
+                                case 6:{
+                                    return "Car6";
+                                    break
+                                }
+                                case 7:{
+                                    return "Car7";
+                                    break
+                                }
+                                case 8:{
+                                    return "Car8";
+                                    break
+                                }
+                                case 9:{
+                                    return "Car9";
+                                    break
+                                }
+                                case 10:{
+                                    return "Car10";
+                                    break
+                                }
+                                case 11:{
+                                    return "Car11";
+                                    break
+                                }
+                                case 12:{
+                                    return "Car12";
+                                    break
+                                }
+                                case 13:{
+                                    return "Car13";
+                                    break
+                                }
+                                case 14:{
+                                    return "Car14";
+                                    break
+                                }
+                                case 15:{
+                                    return "Car15";
+                                    break
+                                }
+                            }
+                    }
+                function check(){
+                    if(temp==1){
+                        temp=15;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    } else{
+                        temp=temp-1
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    };
+                        
+                };
+                
+                function check02(){
+
+                    if (temp==15){
+                        temp=1;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    } else {
+                        temp=temp+1
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    };
+                    
+                };
+
+                function check03(temp2){
+                        temp=temp2;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                };
+            </script>
+
+
+            <div class="col-sm-1" >
+                <a onclick="check()" href="#"><img src="../../../image/arrowleft.png" width="100%" style="width: 50px;" id="arrow-button"></a>
+            </div>
+        
+            <div class="col-sm-10" >
+                <ul  style="margin-left: 40%;" class="nav navbar-nav" >
+                <li   class="dropdown">
+                    <a class="dropdown-toggle" id="dropdow" data-toggle="dropdown" href="#"><span id="number" ></span>
+                        <script>
+                            document.getElementById('number').innerHTML=chuyen(temp);
+                            
+                        </script>
+                        <span class="caret"></span>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <script>for(var i=1;i<=15;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+chuyen(i)+'</a></li>')}</script>
+                        </ul>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-sm-1" >
+                <a onclick="check02()" href="#"><img src="../../../image/arrowright.png" width="100%" style="width: 50px;" id="arrow-button"></a>
+            </div>
+        </div>
+            
+            <div class="row" style="margin-top: 2%;" >
+                <div class="col-sm-10 col-sm-offset-1" >
+                    <div id="iframe01" ></div>
+                    <script>document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);</script>
+                </div>
+
+
+            </div>
+        </section>
+
+         <footer style="margin-top: 20px;"  >
+             
+            <hr id="fthr">
+            <!--Logo-->
+            <div>
+                <a href="../../homepage.html">
+                    <img src="../../../image/logo.png" style="width: 200px; " width="100%">
+                </a>
+            </div>   
+        <!--Content Footer-->
+           <table id="tbft" >
+                <tr>
+                    <th id="tbftth" style=" color: rgb(0, 183, 255); font-size: 15pt;" >
+                        Communities
+                    </th> 
+                    <th id="tbftth" style=" color: rgb(0, 183, 255); font-size: 15pt;" >
+                        Services
+                    </th>
+                    <th id="tbftth" style=" color: rgb(0, 183, 255); font-size: 15pt;" >
+                        Contact Us
+                    </th>
+                    <td rowspan="5" >
+                        <img src="../../../image/sun.png" style="margin-left: 100px; width: 150px;" alt="">
+                </td>
+                </tr>
+                <tr>
+                    <td id="tbftth" >
+                        <a id="aft" href="#">About Us</a>
+                    </td>
+                    <td id="tbftth" >
+                        <a id="aft" href="#">Advertise With Us</a>
+                    </td>
+                    <td id="tbftth" >
+                        Send Us Message at:
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tbftth" >
+                        <a id="aft" href="#">FAQs</a>
+                    </td>
+                    <td id="tbftth" >
+                        <a id="aft" href="#">Branded Apps For Schools</a>
+                    </td>
+                    <td id="tbftth" >
+                        <a  href="mailto:Zonekids@NPTGroup.com.vn">Zonekids@NPTGroup.com.vn</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tbftth" >
+                        <a id="aft" href="#">Blog</a>
+                    </td>
+                    <td id="tbftth" >
+                        <a id="aft" href="#">Educational Apps</a>
+                    </td>
+                    <td id="tbftth" >
+                        <a id="aft" href="#"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tbftth" >
+                        <a id="aft" href="">Parents</a>
+                    </td>
+                    <td id="tbftth" >
+                        <a id="aft" href="#"></a>
+                    </td>
+                    <td id="tbftth" >
+                        <a id="aft" href="#"></a>
+                    </td>
+                </tr>
+
+           </table>
+                <h4 style="text-align: center;" >Copyright 2020 NPT Group All right reserved.</h4>                    
+         </footer>
+        <!-- Scrolling to the top button -->
+         <aside class="asde" >
+          
+            <a href="#" ><img src="../../../image/arow.png" alt="icon" width="65px" ></a> 
+           </aside>
+    </div>
+    
+
+</body>
+</html>
+
+<!--Modal form of signin-->
+<script>var home='../../homepage.html'; image01= '../../../'</script>
+<script src="../../../js/RegisterLogin.js"></script>
+<script src="../../../js/checkerror.js" ></script>
