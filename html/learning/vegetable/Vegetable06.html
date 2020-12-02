@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegetable</title>
+    <title>Fruits Puzzle</title>
 <!--Favicon logo-->
 <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
@@ -132,7 +132,7 @@
 
         <section>
             <div class="row" >
-                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Learn Alphabets With Fruits</p>
+                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Fruits Puzzle</p>
                 <a href="Vegetable.html">
                     <button class="col-sm-4" id="buttonView"  >
                         View All Activities 
@@ -146,21 +146,21 @@
  
             <script>
                 var temp=1;
-                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/animals-abc/';
+                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/fruits-puzzle/';
                     str2='/" frameborder="0" width="100%" height="700px" ></iframe>';
                     str3='';
                     function chuyen(temp3){
                             switch (temp3){
                                 case 1:{
-                                    return "Apple";
+                                    return"Apple";
                                     break
                                 }
                                 case 2:{
-                                    return"Banana";
+                                    return"Avocado";
                                     break
                                 }
                                 case 3:{
-                                    return"Cherry";
+                                    return"Banana";
                                     break
                                 }
                                 case 4:{
@@ -168,102 +168,50 @@
                                     break
                                 }
                                 case 5:{
-                                    return"Date";
-                                    break
-                                }
-                                case 6:{
-                                    return"Elderberry";
-                                    break
-                                }
-                                case 7:{
-                                    return"Fig";
-                                    break
-                                }
-                                case 8:{
                                     return"Grapes";
                                     break
                                 }
-                                case 9:{
-                                    return"Honeydew";
-                                    break
-                                }
-                                case 10:{
-                                    return"Ita Plam";
-                                    break
-                                }
-                                case 11:{
-                                    return"Jackfruit";
-                                    break
-                                }
-                                case 12:{
+                                case 6:{
                                     return"Kiwi";
                                     break
                                 }
-                                case 13:{
-                                    return"Lemon";
-                                    break
-                                }
-                                case 14:{
+                                case 7:{
                                     return"Mango";
                                     break
                                 }
-                                case 15:{
-                                    return"Nectarine";
-                                    break
-                                }
-                                case 16:{
+                                case 8:{
                                     return"Orange";
                                     break
                                 }
-                                case 17:{
+                                case 9:{
+                                    return"Papaya";
+                                    break
+                                }
+                                case 10:{
+                                    return"Pear";
+                                    break
+                                }
+                                case 11:{
                                     return"Pineapple";
                                     break
                                 }
-                                case 18:{
-                                    return"Quince";
+                                case 12:{
+                                    return"Pomegranate";
                                     break
                                 }
-                                case 19:{
-                                    return"Rambutan";
+                                case 13:{
+                                    return"Strawberry";
                                     break
                                 }
-                                case 20:{
-                                    return"Starfruit";
-                                    break
-                                }
-                                case 21:{
-                                    return"Tangerine";
-                                    break
-                                }
-                                case 22:{
-                                    return"Ugli Fruit";
-                                    break
-                                }
-                                case 23:{
-                                    return"Vanilla";
-                                    break
-                                }
-                                case 24:{
+                                case 14:{
                                     return"Watermelon";
-                                    break
-                                }
-                                case 25:{
-                                    return"Xigua Melon";
-                                    break
-                                }
-                                case 26:{
-                                    return"Yellow Passion";
-                                    break
-                                }
-                                case 27:{
-                                    return"Zucchini";
                                     break
                                 }
                             }
                     }
                 function check(){
                     if(temp==1){
-                        temp=27;
+                        temp=14;
                         document.getElementById('number').innerHTML=chuyen(temp);
                         document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
                     } else{
@@ -276,7 +224,7 @@
                 
                 function check02(){
 
-                    if (temp==27){
+                    if (temp==14){
                         temp=1;
                         document.getElementById('number').innerHTML=chuyen(temp);
                         document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
@@ -311,7 +259,7 @@
                         <span class="caret"></span>
                     </a>
                         <ul class="dropdown-menu">
-                            <script>for(var i=1;i<=27;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+chuyen(i)+'</a></li>')}</script>
+                            <script>for(var i=1;i<=14;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+chuyen(i)+'</a></li>')}</script>
                         </ul>
                   </li>
                 </ul>
