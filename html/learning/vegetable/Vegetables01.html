@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alphabets Coloring</title>
+    <title>Vegetable</title>
 <!--Favicon logo-->
 <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
@@ -24,12 +24,11 @@
         href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
     <script type="text/javascript"
         src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
-
-<!--add css-->
-    <link rel="stylesheet" href="../../../css/navbar.css">
-    <link rel="stylesheet" href="../../../css/HeaderAside.css">
-    <link rel="stylesheet" href="../../../css/learning.css">
 <!--add javacript-->
+ <!--add css-->
+ <link rel="stylesheet" href="../../../css/navbar.css">
+ <link rel="stylesheet" href="../../../css/HeaderAside.css">
+ <link rel="stylesheet" href="../../../css/learning.css">
 <Script>
     function play(ms,aut){
         var audio = new Audio(ms);
@@ -119,8 +118,9 @@
         </div>
     
     <!--Wooden Board Animation-->
+
             <div id="table01"  >
-                <p id="brd01" >Alphabetical</p>
+                <p id="brd01" >Vegetables</p>
             </div>
 
             <div>
@@ -132,8 +132,8 @@
 
         <section>
             <div class="row" >
-                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Alphabets Coloring</p>
-                <a href="alphabetical.html">
+                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Learn Alphabets With Vegetables</p>
+                <a href="Vegetable.html">
                     <button class="col-sm-4" id="buttonView"  >
                         View All Activities 
                         <span class="glyphicon glyphicon-chevron-right" ></span>
@@ -142,43 +142,152 @@
                      </a>
             </div>
 
-    <div class="row">
-
+            <div class="row" >
+ 
             <script>
-                var temp=65;
-                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/Alphabets/';
+                var temp=1;
+                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/animals-abc/';
                     str2='/" frameborder="0" width="100%" height="700px" ></iframe>';
+                    str3='';
+                    function chuyen(temp3){
+                            switch (temp3){
+                                case 1:{
+                                    return "A";
+                                    break
+                                }
+                                case 2:{
+                                    return"B";
+                                    break
+                                }
+                                case 3:{
+                                    return"C";
+                                    break
+                                }
+                                case 4:{
+                                    return"D";
+                                    break
+                                }
+                                case 5:{
+                                    return"E";
+                                    break
+                                }
+                                case 6:{
+                                    return"F";
+                                    break
+                                }
+                                case 7:{
+                                    return"G";
+                                    break
+                                }
+                                case 8:{
+                                    return"H";
+                                    break
+                                }
+                                case 9:{
+                                    return"I";
+                                    break
+                                }
+                                case 10:{
+                                    return"J";
+                                    break
+                                }
+                                case 11:{
+                                    return"K";
+                                    break
+                                }
+                                case 12:{
+                                    return"L";
+                                    break
+                                }
+                                case 13:{
+                                    return"M";
+                                    break
+                                }
+                                case 14:{
+                                    return"N";
+                                    break
+                                }
+                                case 15:{
+                                    return"O";
+                                    break
+                                }
+                                case 16:{
+                                    return"P";
+                                    break
+                                }
+                                case 17:{
+                                    return"Q";
+                                    break
+                                }
+                                case 18:{
+                                    return"R";
+                                    break
+                                }
+                                case 19:{
+                                    return"S";
+                                    break
+                                }
+                                case 20:{
+                                    return"T";
+                                    break
+                                }
+                                case 21:{
+                                    return"U";
+                                    break
+                                }
+                                case 22:{
+                                    return"V";
+                                    break
+                                }
+                                case 23:{
+                                    return"W";
+                                    break
+                                }
+                                case 24:{
+                                    return"X";
+                                    break
+                                }
+                                case 25:{
+                                    return"Y";
+                                    break
+                                }
+                                case 26:{
+                                    return"Z";
+                                    break
+                                }
+                            }
+                    }
                 function check(){
-                    if(temp==65){
-                        temp=90;
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
+                    if(temp==1){
+                        temp=26;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
                     } else{
                         temp=temp-1
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);  
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
                     };
                         
                 };
                 
                 function check02(){
 
-                    if (temp==90){
-                        temp=65;
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
+                    if (temp==26){
+                        temp=1;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
                     } else {
                         temp=temp+1
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
                     };
                     
                 };
 
                 function check03(temp2){
                         temp=temp2;
-                        document.getElementById('number').innerHTML=String.fromCharCode(temp);
-                        document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
                 };
             </script>
 
@@ -190,15 +299,15 @@
             <div class="col-sm-10" >
                 <ul  style="margin-left: 40%;" class="nav navbar-nav" >
                 <li   class="dropdown">
-                    <a class="dropdown-toggle" id="dropdow" data-toggle="dropdown" href="#">Alphabets-<span id="number" ></span>
+                    <a class="dropdown-toggle" id="dropdow" data-toggle="dropdown" href="#"><span id="number" ></span>
                         <script>
-                            document.getElementById('number').innerHTML=String.fromCharCode(temp);
+                            document.getElementById('number').innerHTML=chuyen(temp);
                             
                         </script>
                         <span class="caret"></span>
                     </a>
                         <ul class="dropdown-menu">
-                            <script>for(var i=65;i<=90;i++){document.write('<li><a onclick="check03('+i+')" href="#">Alphabets-'+String.fromCharCode(i)+'</a></li>')}</script>
+                            <script>for(var i=1;i<=26;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+chuyen(i)+'</a></li>')}</script>
                         </ul>
                   </li>
                 </ul>
@@ -211,11 +320,12 @@
             <div class="row" style="margin-top: 2%;" >
                 <div class="col-sm-10 col-sm-offset-1" >
                     <div id="iframe01" ></div>
-                    <script>document.getElementById('iframe01').innerHTML=str.concat(String.fromCharCode(temp),str2);</script>
+                    <script>document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);</script>
                 </div>
+
+
             </div>
-            
-           
+
                 
         </section>
 
@@ -291,6 +401,7 @@
                         <a id="aft" href="#"></a>
                     </td>
                 </tr>
+
 
            </table>
                 <h4 style="text-align: center;" >Copyright 2020 NPT Group All right reserved.</h4>                    
