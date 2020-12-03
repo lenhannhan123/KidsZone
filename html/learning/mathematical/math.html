@@ -82,6 +82,16 @@
             src:url(../../../fonts/Modak-Regular.ttf); /* Add font from url */
             font-family: Modak; /*Rename font*/
         }  
+        @media screen and (max-width: 1200px) {
+                .nvtb {
+                        display: none;
+                    }
+            }
+        @media screen and (min-width: 1200px) {
+            .nvsb-rps {
+                        display: none;
+                }
+        }
     </style>
 </head>
 <body>
@@ -140,12 +150,59 @@
             </div>
         </nav>
 
+        <nav  class="nvsb-rps"   >
+            <div class="navbar navbar-inverse" id="rps-background" >
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <a id="rps-logo" class="navbar-brand" href="../../homepage.html">Kids Zone Game</a>
+                    </div>
+
+                    <ul class="nav navbar-nav">
+                            <li>
+                                <a id="a-nav" href="../../homepage.html" style="height: 70px;" >
+                                    <img src="../../../gif/homeg.gif"  style="width: 20px; margin-bottom: 10px; ">
+                                    <span >Home</span> 
+                                </a>
+                            </li>
+                            <li id="active" >
+                                <a id="a-nav" href="categories.html" style="height: 70px;"  >
+                                    <img src="../../../gif/learngif.gif"  style="width: 30px; margin-bottom: 10px;">
+                                    <span>Learning</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a id="a-nav" href="../../Contactus.html" style="height: 70px;"  >
+                                    <img src="../../../gif/contactg.gif"  style="width: 40px; margin-bottom: 10px;">
+                                   <span>Contact Us</span> 
+                                </a>
+                            </li>
+                    </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a id="a-nav" href="#" style="height: 70px;"  >
+                                    <img src="../../../gif/reg01g.gif"  style="width: 25px; margin-bottom: 10px;">
+                                    <span>Register</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a id="a-nav" href="#" style="height: 70px;"  >
+                                    <img src="../../../gif/lop01g.gif"  style="width: 35px; margin-bottom: 10px;">
+                                    <span>Login</span> 
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+        </div>
+            
+
+        </nav>
         
 
         <section>
                 <p id="title1"  align="center" >Math</p>
-                <p id="content"  align="center"  >Welcome to learning centre of Kids Zone. Check out below to find amazing interactive 
-                activities for you!</p>
+                <span id="content" style="margin-left: 10%"  >Welcome to learning centre of Kids Zone. Check out below to find amazing interactive 
+                    activities for you!</span>
                 <script src="../../../js/learning01.js"></script>
         </section>
 
