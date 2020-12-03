@@ -4,7 +4,7 @@
 document.write('<style>');
 document.write('.modal-content{');
 document.write('background-image:url('+image01+'image/BackgroundModal.jpg);');
-document.write('background-size: 160%;');
+document.write('background-size: 200%;');
 document.write('background-repeat: no-repeat;');
 document.write('}');
 document.write('#font-form{');
