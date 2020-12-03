@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Months Baker</title>
+    <title>Shapes Learning With Things</title>
 <!--Favicon logo-->
 <link rel="icon" href="../../../image/logo.png" type="image/gif" sizes="16x16">
 
@@ -24,11 +24,11 @@
         href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
     <script type="text/javascript"
         src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
-<!--add css-->
-    <link rel="stylesheet" href="../../../css/navbar.css">
-    <link rel="stylesheet" href="../../../css/HeaderAside.css">
-    <link rel="stylesheet" href="../../../css/learning.css">
 <!--add javacript-->
+ <!--add css-->
+ <link rel="stylesheet" href="../../../css/navbar.css">
+ <link rel="stylesheet" href="../../../css/HeaderAside.css">
+ <link rel="stylesheet" href="../../../css/learning.css">
 <Script>
     function play(ms,aut){
         var audio = new Audio(ms);
@@ -108,7 +108,7 @@
                     </a>
                 </li>
                 <li id="lih">
-                    <a id="contact" href="#" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
+                    <a id="contact" href="../../Contactus.html" onmouseover="play('../../../audio/ES_Bubble Blip 1 - SFX Producer.mp3',0)" >
                         <img src="../../../gif/contactg.gif"  style="width: 70px; margin-bottom: 20px;">
                         <Span>Contact Us</Span> 
                         
@@ -120,7 +120,7 @@
     <!--Wooden Board Animation-->
 
             <div id="table01"  >
-                <p id="brd01" >Date</p>
+                <p id="brd01" >Other Game</p>
             </div>
 
             <div>
@@ -132,8 +132,8 @@
 
         <section>
             <div class="row" >
-                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Months Baker</p>
-                <a href="date.html">
+                <p class="col-sm-4 col-sm-offset-4 " id="title1"  align="center" >Shapes Learning With Things</p>
+                <a href="other.html">
                     <button class="col-sm-4" id="buttonView"  >
                         View All Activities 
                         <span class="glyphicon glyphicon-chevron-right" ></span>
@@ -142,12 +142,148 @@
                      </a>
             </div>
 
-            
+            <div class="row" >
+ 
+            <script>
+                var temp=1;
+                var str='<iframe src="https://www.thelearningapps.com/wp-content/themes/dt-the7/activities/shapes-things/';
+                    str2='/" frameborder="0" width="100%" height="700px" ></iframe>';
+                    str3='';
+                    function chuyen(temp3){
+                            switch (temp3){
+                                case 1:{
+                                    return "Arrow";
+                                    break
+                                }
+                                case 2:{
+                                    return"Circle";
+                                    break
+                                }
+                                case 3:{
+                                    return "Cross";
+                                    break
+                                }
+                                case 4:{
+                                    return"Heart";
+                                    break
+                                }
+                                case 5:{
+                                    return"Hexagon";
+                                    break
+                                }
+                                case 6:{
+                                    return"Moon";
+                                    break
+                                }
+                                case 7:{
+                                    return"Octagon";
+                                    break
+                                }
+                                case 8:{
+                                    return"Oval";
+                                    break
+                                }
+                                case 9:{
+                                    return"Parallelogram";
+                                    break
+                                }
+                                case 10:{
+                                    return"Pentagon";
+                                    break
+                                }
+                                case 11:{
+                                    return"Rectangle";
+                                    break
+                                }
+                                case 12:{
+                                    return"Rhombus";
+                                    break
+                                }
+                                case 13:{
+                                    return"Square";
+                                    break
+                                }
+                                case 14:{
+                                    return"Star";
+                                    break
+                                }
+                                case 15:{
+                                    return"Trapezoid";
+                                    break
+                                }
+                                case 16:{
+                                    return"Triangle";
+                                    break
+                                }
+                            }
+                    }
+                function check(){
+                    if(temp==1){
+                        temp=16;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    } else{
+                        temp=temp-1
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    };
+                        
+                };
+                
+                function check02(){
+
+                    if (temp==16){
+                        temp=1;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    } else {
+                        temp=temp+1
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                    };
+                    
+                };
+
+                function check03(temp2){
+                        temp=temp2;
+                        document.getElementById('number').innerHTML=chuyen(temp);
+                        document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);
+                };
+            </script>
+
+
+            <div class="col-sm-1" >
+                <a onclick="check()" href="#"><img src="../../../image/arrowleft.png" width="100%" style="width: 50px;" id="arrow-button"></a>
+            </div>
+        
+            <div class="col-sm-10" >
+                <ul  style="margin-left: 40%;" class="nav navbar-nav" >
+                <li   class="dropdown">
+                    <a class="dropdown-toggle" id="dropdow" data-toggle="dropdown" href="#"><span id="number" ></span>
+                        <script>
+                            document.getElementById('number').innerHTML=chuyen(temp);
+                            
+                        </script>
+                        <span class="caret"></span>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <script>for(var i=1;i<=16;i++){document.write('<li><a onclick="check03('+i+')" href="#">'+chuyen(i)+'</a></li>')}</script>
+                        </ul>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-sm-1" >
+                <a onclick="check02()" href="#"><img src="../../../image/arrowright.png" width="100%" style="width: 50px;" id="arrow-button"></a>
+            </div>
+        </div>
             
             <div class="row" style="margin-top: 2%;" >
                 <div class="col-sm-10 col-sm-offset-1" >
-                    <iframe src="https://www.freddiesville.com/members/html5games/sentence-games/months-baker/index.html" frameborder="0" width="100%" height="700px" ></iframe>
+                    <div id="iframe01" ></div>
+                    <script>document.getElementById('iframe01').innerHTML=str.concat(chuyen(temp),str2);</script>
                 </div>
+
+
             </div>
 
                 
@@ -156,7 +292,7 @@
 
 
 
-         <footer style="margin-top: 20px;"  >
+        <footer style="margin-top: 20px;"  >
              
             <hr id="fthr">
             <!--Logo-->
@@ -226,11 +362,11 @@
                     </td>
                 </tr>
 
+
            </table>
                 <h4 style="text-align: center;" >Copyright 2020 NPT Group All right reserved.</h4>                    
          </footer>
         <!-- Scrolling to the top button -->
-
          <aside class="asde" >
           
             <a href="#" ><img src="../../../image/arow.png" alt="icon" width="65px" ></a> 
