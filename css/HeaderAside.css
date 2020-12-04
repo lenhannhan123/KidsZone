@@ -39,6 +39,14 @@
 
 @media screen and (max-width: 1200px) {
     .asde{
+        margin-left: 93%;
+    }
+
+    
+}
+
+@media screen and (max-width: 700px) {
+    .asde{
         margin-left: 80%;
     }
 
