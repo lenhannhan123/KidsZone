@@ -12,7 +12,7 @@ $(document).ready(function(){
           user:{
                 validators:{
                     notEmpty: {
-                        message: 'User Namw is required and cannot be empty'
+                        message: 'User Name is required and cannot be empty'
                     }
                 }
             
@@ -49,7 +49,7 @@ $(document).ready(function(){
             phone: {
                 validators: {
                     notEmpty: {
-                        message: 'Please select a city'
+                        message: 'Please insert your phone number'
                     },
                     regexp: {
                         regexp: /^[0-9]+$/i,
@@ -81,7 +81,7 @@ $(document).ready(function(){
           user1:{
                 validators:{
                     notEmpty: {
-                        message1: 'User Namw is required and cannot be empty'
+                        message1: 'User Name is required and cannot be empty'
                     }
                 }
             
