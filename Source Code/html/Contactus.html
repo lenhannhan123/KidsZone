@@ -178,97 +178,94 @@
     <!-- All body contents are inside below section -->
         <section>
     <!-- Contact Us -->
-    <meta charset="utf-8">
-        <style type="text/css">
-	        .container {
-	        	width: 80%;
-	            margin: auto;
-			    border-radius: 5px;
-			    background-color: #f2f2f2;
-			    padding: 20px;
-	        }
-          	input[type=text] {
-			    width: 100%;
-			    padding: 12px;
-			    border: 1px solid #ccc;
-			    border-radius: 4px;
-			    box-sizing: border-box;
-			    margin-top: 6px;
-			    margin-bottom: 16px;
-			    resize: vertical;
-			}
+    <style>
+        <div class="contact-section">
+        {
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat", sans-serif;
+        }
+        .contact-secction{
+            background: url(bg.gng) no-repeat center;
+            background-size: cover;
+            padding: 40px 0; 
+        }
+        .contact-secction h1{
+            text-align: center;
+            color: #ddd;
+        }
+        .border{
+            width: 100px;
+            height: 10px;
+            background: #34495e;
+            margin: auto;
+        }
+        .contact-form{
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+        }
+        .contact-form-text{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 16px 0;
+            border: 0;
+            background: yellowgreen;
+            padding: 20px 40px;
+            outline: none;
+            color: #ddd;
+            transition: 0.5s;
+        }
+        .contact-form-text: focus{
+            box-shadow: 0 0 10px 4px #34495e;
+        }
+        textarea.contact-form-text{
+            resize: none;
+            height: 120px;
+        }
+        .contact-form-btn{
+            float: right;
+            border: 0;
+            background: #34495e;
+            color: #fff;
+            padding: 12px 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .contact-form-btn: hover{
+            background: #2980b9;    
+        }
+    </style>
+    <h1 style="color: rgb(0, 183, 255);">Contact Us: </h1>
+    <div class="border"></div>
+    <form class="contact-form" action="index.html" method="post">
+        <label for="fname">First name: </label>
+        <input type="text" class="contact-form-text" placeholder="Enter First name">
+        
+        <label for="lname">Last name: </label>
+        <input type="text" class="contact-form-text" placeholder="Enter Last name">
 
-			input[type=submit] {
-			    background-color: #4CAF50;
-			    color: white;
-			    padding: 12px 20px;
-			    border: none;
-			    border-radius: 4px;
-			    cursor: pointer;
-			}
+        <label for="mail">Email: </label>
+        <input type="text" class="contact-form-text" placeholder="Enter Email">
+        
+        <label for="number" >Phone: </label>
+        <input type="text" class="contact-form-text" placeholder="Enter Phone"><br>
+        
+        <label for="message">Message: </label>
+        <textarea class="contact-form-text" placeholder="Enter Message"></textarea>
+        <input type="submit" class="contact-form-btn" value="Send">
 
-			input[type=submit]:hover {
-			    background-color: #45a049;      
-			}
-        </style>
-    <body> 
-        <div class="row" style="margin-top: 50px;" >
-     <div class="col-sm-7" >
-		<div class="container">
-		   <h2 style="color: rgb(0, 183, 255);">Contact Us</h2>
-            <form id="contactForm" method="post" class="form-horizontal" action="Homepage.html">
-                <!-- Capture user error about First name-->
-                <div class="form-group">
-                  <label class="col-md-2 control-label">First name: </label>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" name="firstname" required placeholder="Enter first name...">
-                </div>
-            </div>
-                <!-- Capture user error about Last name -->
-                <div class="form-group">
-                  <label class="col-md-2 control-label">Last name: </label>
-                    <div class="col-md-6">
-                      <input type="text" class="form-control" name="Lastname" required placeholder="Enter last name...">
-                </div>
-            </div>
-                <!-- Capture user error about email -->
-                <div class="form-group">
-                  <label class="col-md-2 control-label">Email: </label>
-                    <div class="col-md-6">
-                      <input type="email" class="form-control" name="email" required placeholder="Enter email...">
-                </div>
-            </div>
-                <!-- Capture user error about Phone number -->
-                <div class="form-group">
-                  <label class="col-md-2 control-label">Phone: </label>
-                    <div class="col-md-6">
-                      <input type="number" class="form-control" name="Phone" required placeholder="Enter Phone...">
-                </div>
-            </div>
-                <!-- #messages is where the messages are placed inside -->
-                <div class="form-group">
-                    <div class="col-md-1 col-md-offset-1">
-                        <label for="message">Message: </label>
-                            </div>
-                        <div class="col-md-6">
-                    <textarea id="w3review" rows="4" cols="30" placeholder="Enter massage..."></textarea><br>
-                </div>
-            </div>
-                <!-- Send button -->
-                <div class="form-group">
-                    <div class="col-md-2 col-md-offset-2">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+    </form>
+</div>
+    <!-- Building photo -->
     <div class="col-sm-5">
-        <img style="width: 400px; height: 500px;" src="../image/toanha.png">
+        <img style="width: 400px; height: 400px;" src="../image/toanha.png">
     </div>
 </div>
     </body>
-        <!-- Information of our company -->
+    <!-- Information of our company -->
         <p style="color:rgb(0, 183, 255)"><strong>NPT GROUP:</strong></p>
     <p>
         <span class="glyphicon glyphicon-home"></span>
@@ -385,10 +382,8 @@
             <aside class="asde">
             <a href="#top" ><img src="../image/arow.png" alt="icon" width="65px" ></a> 
             </aside>
-    </div>
-    
-
-</body>
+        </div>
+    </body>
 </html>
 
 <!--Modal form of signin-->
