@@ -20,6 +20,8 @@
         href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
     <script type="text/javascript"
         src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+    
+
 
 <!--add css-->
     <link rel="stylesheet" href="../css/navbar.css">
@@ -44,7 +46,21 @@
         @font-face{
             src:url(../fonts/Modak-Regular.ttf); /* Add font from url */
             font-family: Modak; /*Rename font*/
-        }       
+        }     
+
+        @media screen and (max-width: 1200px) {
+                .nvtb {
+                        display: none;
+                    }
+                #tbft{
+                    display: none;
+                }
+            }
+        @media screen and (min-width: 1200px) {
+            .nvsb-rps {
+                        display: none;
+                }
+        }
     </style>
 </head>
 <body>
@@ -124,7 +140,59 @@
             <div>
                 <img src="../image/nav00.jpg" height="550px" width="100%" >
             </div>
-        </nav>        
+        </nav>  
+        
+        <nav  class="nvsb-rps"   >
+            <div class="navbar navbar-inverse" id="rps-background" >
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <a id="rps-logo" class="navbar-brand" href="homepage.html">Kids Zone Game</a>
+                    </div>
+
+                    <ul class="nav navbar-nav">
+                            <li id="active"  >
+                                <a id="a-nav" href="homepage.html" style="height: 70px;" >
+                                    <img src="../gif/homeg.gif"  style="width: 20px; margin-bottom: 10px; ">
+                                    <span >Home</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a id="a-nav" href="categories.html" style="height: 70px;"  >
+                                    <img src="../gif/learngif.gif"  style="width: 30px; margin-bottom: 10px;">
+                                    <span>Learning</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a id="a-nav" href="Contactus.html" style="height: 70px;"  >
+                                    <img src="../gif/contactg.gif"  style="width: 40px; margin-bottom: 10px;">
+                                   <span>Contact Us</span> 
+                                </a>
+                            </li>
+                    </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                
+                                <a id="a-nav"data-toggle="modal"  data-target="#myModal" style="height: 70px;"  >
+                                    <img src="../gif/reg01g.gif"  style="width: 25px; margin-bottom: 10px;">
+                                    <span>Register</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a id="a-nav" data-toggle="modal" data-target="#login" style="height: 70px;"  >
+                                    <img src="../gif/lop01g.gif"  style="width: 35px; margin-bottom: 10px;">
+                                    <span>Login</span> 
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+        </div>
+            
+
+        </nav>
+
+
+
         <section>
             <!-- Banner Slider -->
             <div class="fluid" style="margin-bottom: 30%;" >
