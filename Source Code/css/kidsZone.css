@@ -9,6 +9,28 @@
     padding: 0 50px;
 }
 
+/* Column for Gallery page*/
+.column-gallery {
+    float: left;
+    width: 25%;
+    padding: 0 50px;
+}
+/* Column for Panguin page*/
+.column-4 {
+    float: left;
+    width: 25%;
+    padding: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+  
+
 /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -15px;}
 
@@ -31,7 +53,14 @@
 /* Style the counter cards */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 0px;
+    padding: 0px 0px 5px 0px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.card-gallery {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 0px 0px 5px 0px;
     text-align: center;
     background-color: #ffffff;
 }
@@ -41,6 +70,12 @@ h1 {
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
+} 
+
+h2 { 
+    font-family: "Open Sans"; 
+    font-style: normal; 
+    font-variant: normal; 
 } 
 
 h3 { 
@@ -86,6 +121,7 @@ pre {
     border-radius: 10px;
 }
 
+
 /*Style button chung*/
 .btn-common {
     display: inline-block;
@@ -118,7 +154,7 @@ pre {
 }
 
 /* Animation */
-
+/* <!--class = "animated animatedFadeInUp fadeInUp"--> */
 @keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
@@ -156,4 +192,50 @@ pre {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 0px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #3bac3b;
+    color: #ffffff;
+    transform: rotateY(180deg);
 }
