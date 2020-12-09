@@ -100,6 +100,20 @@
             .nvsb-rps {
                         display: none;
                 }
+        } 
+/*Button View All Activities */
+        #buttonView{
+            width: 200px; 
+            height: 60px; 
+            border: none; 
+            background-color: #ee3c06; 
+            margin-left: 1%; 
+            margin-top: 1%; 
+            border-radius: 1000px; 
+            box-shadow: 2px 5px 10px gray; 
+            color: white; 
+            font-size: 12pt;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -210,7 +224,15 @@
         
 
         <section>
-                <p id="title1"  align="center" >Other Game</p>
+                <div class="row" >
+                    <a href="../../categories.html">
+                        <button class="col-sm-4" id="buttonView"  >
+                            <span class="glyphicon glyphicon-chevron-left" ></span>
+                            View All Learning    
+                        </button>
+                         </a>
+                    <p class="col-sm-8" id="title1"  align="center" >Other Game</p>
+                </div>
                 <span id="content" style="margin-left: 10%"  >Welcome to learning centre of Kids Zone. Check out below to find amazing interactive 
                     activities for you!</span>
                 <script src="../../../js/learning01.js"></script>
